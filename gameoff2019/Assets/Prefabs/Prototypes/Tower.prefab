@@ -48,8 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  targetToLookAt: {fileID: 389783270993280912, guid: 6e2beff7b408fda48bdded413d5869e0,
-    type: 3}
+  distanceToStartLookAt: 1
 --- !u!33 &3249605230380453317
 MeshFilter:
   m_ObjectHideFlags: 0
