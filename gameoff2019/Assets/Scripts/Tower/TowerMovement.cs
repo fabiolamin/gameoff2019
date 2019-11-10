@@ -7,8 +7,9 @@ public class TowerMovement : MonoBehaviour
     // The script is not ready yet.
     [SerializeField]
     private float rotationSpeed = 5f;
-    private GameObject targetToLookAt;
+    [SerializeField]
     private AttackZone attackZone;
+    private GameObject targetToLookAt;
 
     public float SpeedRotation
     {
