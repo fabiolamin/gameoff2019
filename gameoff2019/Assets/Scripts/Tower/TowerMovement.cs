@@ -26,9 +26,13 @@ public class TowerMovement : MonoBehaviour
     private void Update()
     {
         targetToLookAt = GameObject.FindGameObjectWithTag("Enemy");
-        if (IsTargetGettingClose())
+
+        if (targetToLookAt != null)
         {
-            LookAtTarget();
+            if (IsTargetGettingClose())
+            {
+                LookAtTarget();
+            }
         }
     }
 
