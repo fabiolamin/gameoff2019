@@ -7,20 +7,13 @@ public class TowerMovement : MonoBehaviour
     // The script is not ready yet.
     [SerializeField]
     private float rotationSpeed = 5f;
-    [SerializeField]
-    private float distanceToStartLookAt = 1f;
     private GameObject targetToLookAt;
+    private AttackZone attackZone;
 
     public float SpeedRotation
     {
         get { return rotationSpeed; }
         set { rotationSpeed = value; }
-    }
-
-    public float DistanceToStartLookAt
-    {
-        get { return distanceToStartLookAt; }
-        set { distanceToStartLookAt = value; }
     }
 
     private void Update()
@@ -29,7 +22,7 @@ public class TowerMovement : MonoBehaviour
 
         if (targetToLookAt != null)
         {
-            if (IsTargetGettingClose())
+            if (attackZone.isTargetInside)
             {
                 LookAtTarget();
             }
@@ -43,16 +36,5 @@ public class TowerMovement : MonoBehaviour
             transform.LookAt(targetToLookAt.transform);
         }
 
-    }
-
-    private bool IsTargetGettingClose()
-    {
-        float distance = Vector3.Distance(transform.position, targetToLookAt.transform.position);
-        if (distance <= distanceToStartLookAt)
-        {
-            return true;
-        }
-
-        return false;
     }
 }
