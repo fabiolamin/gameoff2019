@@ -24,7 +24,7 @@ public class AttackZone : MonoBehaviour
         transform.localScale = Vector3.one * scaleValue;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
