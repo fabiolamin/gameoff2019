@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  distanceToStartLookAt: 1
+  attackZone: {fileID: 0}
 --- !u!33 &3249605230380453317
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 3720184249071574163}
   - component: {fileID: 2930792335872746059}
   - component: {fileID: 5497193675004798747}
+  - component: {fileID: 2692052124722406952}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -200,3 +201,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 1, z: 1}
   m_Center: {x: 0.00000023841855, y: 0, z: 0.000000013342184}
+--- !u!114 &2692052124722406952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3802323724701996254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff8db6f43d594b4f840527082381996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 9157613571507671388, guid: 2c700a5086dbb8744914a1b05133dceb, type: 3}
+  speed: 100

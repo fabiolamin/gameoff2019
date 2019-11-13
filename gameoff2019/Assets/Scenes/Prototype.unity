@@ -555,6 +555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Attack Zone
       objectReference: {fileID: 0}
+    - target: {fileID: 1121786172662593551, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
+        type: 3}
+      propertyPath: scaleValue
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -629,11 +634,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1121786172662593551, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
-        type: 3}
-      propertyPath: scaleValue
-      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a94e42847e6fbfd4fbc60674bdcab4a6, type: 3}
