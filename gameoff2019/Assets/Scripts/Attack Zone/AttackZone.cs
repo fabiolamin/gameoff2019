@@ -15,7 +15,6 @@ public class AttackZone : MonoBehaviour
         get { return scaleValue; }
         set { scaleValue = value; }
     }
-    public bool isTargetInside { get; private set; }
 
     private void Start()
     {
@@ -26,7 +25,6 @@ public class AttackZone : MonoBehaviour
     private void InicializeComponents()
     {
         target = null;
-        isTargetInside = false;
         enemysRow = new List<GameObject>();
     }
 
@@ -35,11 +33,15 @@ public class AttackZone : MonoBehaviour
         transform.localScale = Vector3.one * scaleValue;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            isTargetInside = true;
+            if (target == null)
+            {
+                target = other.gameObject;
+            }
+            enemysRow.Add(other.gameObject);
         }
     }
 
@@ -85,19 +87,6 @@ public class AttackZone : MonoBehaviour
     private void ResetTarget()
     {
         target = null;
-        isTargetInside = false;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            if (target == null)
-            {
-                target = other.gameObject;
-            }
-            enemysRow.Add(other.gameObject);
-        }
     }
 
     public GameObject GetTarget()

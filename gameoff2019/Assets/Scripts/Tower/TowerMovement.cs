@@ -23,10 +23,7 @@ public class TowerMovement : MonoBehaviour
 
         if (targetToLookAt != null)
         {
-            if (attackZone.isTargetInside)
-            {
-                LookAtTarget();
-            }
+            LookAtTarget();
         }
     }
 
