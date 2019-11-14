@@ -33,6 +33,8 @@ public class EnemySpawn : MonoBehaviour
     void Spawn()
     {
         int random = Random.Range(0, enemies.Length);
-        Instantiate(enemies[random], transform.position, Quaternion.identity);
+        float factorId = Random.Range(0, 9999);
+        GameObject go = Instantiate(enemies[random], transform.position, Quaternion.identity);
+        go.GetComponent<Enemy>().SetId((Time.deltaTime*factorId));
     }
 }
