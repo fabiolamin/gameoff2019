@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     private NavMeshAgent enemyNavMeshAgent;
     [SerializeField]
     private float speed = 3f;
-    [SerializeField]
     Transform target;
     public float Speed
     {
@@ -22,13 +21,14 @@ public class EnemyMovement : MonoBehaviour
         enemyNavMeshAgent.speed = speed;
     }
 
-    private void Update()
-    {
-        Move();
-    }
-
     void Move()
     {
         enemyNavMeshAgent.destination = target.position;
+    }
+
+    public void SetTarget(Transform transformTarget)
+    {
+        target = transformTarget;
+        Move();
     }
 }

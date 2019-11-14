@@ -10,6 +10,7 @@ public class EnemySpawn : MonoBehaviour
     [SerializeField]
     private GameObject[] enemies;
     [SerializeField]
+    private Transform target;
 
     public float SpawnInterval
     {
@@ -36,5 +37,6 @@ public class EnemySpawn : MonoBehaviour
         float factorId = Random.Range(0, 9999);
         GameObject go = Instantiate(enemies[random], transform.position, Quaternion.identity);
         go.GetComponent<Enemy>().SetId((Time.deltaTime*factorId));
+        go.GetComponent<EnemyMovement>().SetTarget(target);
     }
 }
