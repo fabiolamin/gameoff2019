@@ -22,6 +22,5 @@ public class SelectBase : MonoBehaviour
     {
         animator.SetBool("isOpen", true);
         animator.SetBool("isClose", false);
-        cbt.AddTimeToolbarBase(3);
     }
 }

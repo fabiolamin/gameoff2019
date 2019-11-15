@@ -7,7 +7,6 @@ public class ConfigureBaseTowers : MonoBehaviour
     private GameObject[] bases;
     private GameObject toolbarBaseTower;
     private Animator animatorToolbarTower;
-    private float timeToolbarOpen = 0;
     void Start()
     {
         PressetBaseTowers();
@@ -24,22 +23,10 @@ public class ConfigureBaseTowers : MonoBehaviour
         }
     }
 
-    void Update()
+    public void CloseToolbarBase()
     {
-        CheckTowerBaseAnimation();
+        animatorToolbarTower.SetBool("isOpen", false);
+        animatorToolbarTower.SetBool("isClose", true);
     }
 
-    private void CheckTowerBaseAnimation()
-    {
-        if (Time.time > timeToolbarOpen)
-        {
-            animatorToolbarTower.SetBool("isOpen", false);
-            animatorToolbarTower.SetBool("isClose", true);
-        }
-    }
-
-    public void AddTimeToolbarBase(int seconds)
-    {
-        timeToolbarOpen = Time.time + seconds;
-    }
 }
