@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TowerMovement : MonoBehaviour
 {
-    // The script is not ready yet.
     [SerializeField]
     private float rotationSpeed = 5f;
     [SerializeField]
@@ -14,14 +13,14 @@ public class TowerMovement : MonoBehaviour
     public float SpeedRotation
     {
         get { return rotationSpeed; }
-        set { rotationSpeed = value; }
+        private set { rotationSpeed = value; }
     }
 
     private void Update()
     {
-        targetToLookAt = attackZone.GetTarget();
+        targetToLookAt = GameObject.FindGameObjectWithTag("Enemy");
 
-        if (targetToLookAt != null)
+        if (targetToLookAt != null && attackZone.isTargetInside)
         {
             LookAtTarget();
         }
