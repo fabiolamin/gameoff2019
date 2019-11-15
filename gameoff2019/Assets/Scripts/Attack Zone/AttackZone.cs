@@ -6,6 +6,7 @@ public class AttackZone : MonoBehaviour
 {
     [SerializeField]
     private float scaleValue = 5f;
+    private List<GameObject> enemiesInsideAttackZone;
     public bool isTargetInside { get; private set; }
     public float ScaleValue
     {
@@ -13,9 +14,18 @@ public class AttackZone : MonoBehaviour
         set { scaleValue = value; }
     }
 
-    private void Start()
+    private void Awake()
     {
         SetScale();
+        enemiesInsideAttackZone = new List<GameObject>();
+    }
+
+    private void Update()
+    {
+       if(enemiesInsideAttackZone.Count == 0)
+       {
+            isTargetInside = false;
+       }
     }
 
     private void SetScale()
@@ -23,19 +33,22 @@ public class AttackZone : MonoBehaviour
         transform.localScale = Vector3.one * scaleValue;
     }
 
+    public void AddToAttackZone(GameObject enemy)
+    {
+        enemiesInsideAttackZone.Add(enemy);
+    }
+
+    public void RemoveFromAttackZone(GameObject enemy)
+    {
+        enemiesInsideAttackZone.Remove(enemy);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             isTargetInside = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            isTargetInside = false;
+            AddToAttackZone(other.gameObject);
         }
     }
 }
