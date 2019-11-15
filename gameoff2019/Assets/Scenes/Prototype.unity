@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 6f2c9bbf5a8b5214eac19728a53264a5, type: 2}
---- !u!4 &578059103 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 3253759414611008641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &666275492
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +167,18 @@ MonoBehaviour:
   spawnInterval: 5
   enemies:
   - {fileID: 389783270993280912, guid: 6e2beff7b408fda48bdded413d5869e0, type: 3}
-  target: {fileID: 578059103}
+--- !u!114 &747305886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3249605228952158562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4fcc0e2d009e34794b8630293089ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &822697252
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +302,6 @@ MonoBehaviour:
   spawnInterval: 10
   enemies:
   - {fileID: 389783270993280912, guid: 6e2beff7b408fda48bdded413d5869e0, type: 3}
-  target: {fileID: 578059103}
 --- !u!4 &978440980
 Transform:
   m_ObjectHideFlags: 0
@@ -395,6 +399,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168851631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3249605228952158562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff8db6f43d594b4f840527082381996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1779207100
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +443,6 @@ MonoBehaviour:
   spawnInterval: 15
   enemies:
   - {fileID: 389783270993280912, guid: 6e2beff7b408fda48bdded413d5869e0, type: 3}
-  target: {fileID: 578059103}
 --- !u!4 &1779207102
 Transform:
   m_ObjectHideFlags: 0
@@ -601,6 +616,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: towerShoot
+      value: 
+      objectReference: {fileID: 1168851631}
+    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: scaleValue
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: shootInterval
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: attackZone
+      value: 
+      objectReference: {fileID: 747305886}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!1001 &3253759414611008641
