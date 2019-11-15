@@ -6,6 +6,8 @@ public class Shoot : MonoBehaviour
 {
     private float timerAux;
     [SerializeField]
+    private AttackZone attackZone;
+    [SerializeField]
     private GameObject bullet;
     [SerializeField]
     private float speed = 100f;
@@ -14,7 +16,7 @@ public class Shoot : MonoBehaviour
     public float Speed
     {
         get { return speed; }
-        set { speed = value; }
+        private set { speed = value; }
     }
 
     public float ShootInterval
@@ -23,17 +25,14 @@ public class Shoot : MonoBehaviour
         set { shootInterval = value; }
     }
 
-    public bool IsReadyToShoot { get; set; }
-
     private void Awake()
     {
         timerAux = shootInterval;
-        IsReadyToShoot = false;
     }
 
     private void FixedUpdate()
     {
-        if (IsReadyToShoot)
+        if (attackZone.isTargetInside)
         {
             shootInterval -= Time.deltaTime;
             if (shootInterval <= 0)
