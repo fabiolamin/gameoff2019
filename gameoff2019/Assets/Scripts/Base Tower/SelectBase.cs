@@ -6,11 +6,11 @@ public class SelectBase : MonoBehaviour
 {
     private GameObject toolbarBase;
     private Animator animator;
-    private ConfigureBaseTowers cbt;
+    private ControlChangingTowers controlChangingTowers;
 
     private void Start()
     {
-        cbt = FindObjectOfType<ConfigureBaseTowers>();
+        controlChangingTowers = FindObjectOfType<ControlChangingTowers>();
     }
 
     public void SetToolbarBase(GameObject goToolbarBaseTower)
@@ -20,6 +20,7 @@ public class SelectBase : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        controlChangingTowers.SetChangeTowers(GetComponent<ChangeTowers>());
         animator.SetBool("isOpen", true);
         animator.SetBool("isClose", false);
     }

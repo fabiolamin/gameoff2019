@@ -14,12 +14,24 @@ public class ConfigureBaseTowers : MonoBehaviour
 
     private void PressetBaseTowers()
     {
+        HideTowersInBase();
+
         toolbarBaseTower = GameObject.FindGameObjectWithTag("ToolbarBaseTower");
         animatorToolbarTower = toolbarBaseTower.GetComponent<Animator>();
         bases = GameObject.FindGameObjectsWithTag("BaseTower");
         foreach (GameObject go in bases)
         {
             go.GetComponent<SelectBase>().SetToolbarBase(toolbarBaseTower);
+        }
+
+    }
+
+    private static void HideTowersInBase()
+    {
+        GameObject[] towersInBase = GameObject.FindGameObjectsWithTag("Tower");
+        foreach (GameObject tb in towersInBase)
+        {
+            tb.SetActive(false);
         }
     }
 

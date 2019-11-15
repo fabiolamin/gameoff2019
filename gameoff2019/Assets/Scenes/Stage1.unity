@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184398297}
   - component: {fileID: 184398298}
+  - component: {fileID: 184398299}
   m_Layer: 0
   m_Name: Bases Tower
   m_TagString: Untagged
@@ -168,6 +169,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e839e5b7bf634449b478dbecf28c4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &184398299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184398296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b724fb4dee1f224fa4186c38a1e64b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &191626454
@@ -412,7 +425,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 441019881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &441019881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +554,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455884330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &455884330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1445,7 +1480,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1159359317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1159359317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,7 +2098,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1447205307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1447205307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,7 +2621,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1546808999}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1546808999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2759,7 +2827,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657135221}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1657135221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,7 +3033,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1713203215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1713203215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3072,7 +3162,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1752656320}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1752656320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3263,7 +3364,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1812061579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1812061579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3309,6 +3421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834045244}
+  - component: {fileID: 1834045245}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -3345,6 +3458,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 255.6, y: 72.3}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1834045245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834045243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1bb01c522cf44b9127102ac6208d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1859345048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,7 +3551,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1859345051}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834045245}
+        m_MethodName: ClickTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1859345051
 MonoBehaviour:
   m_ObjectHideFlags: 0
