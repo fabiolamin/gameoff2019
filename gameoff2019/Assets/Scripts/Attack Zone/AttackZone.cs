@@ -43,12 +43,25 @@ public class AttackZone : MonoBehaviour
         enemiesInsideAttackZone.Remove(enemy);
     }
 
+    public List<GameObject> GetEnemiesInside()
+    {
+        return enemiesInsideAttackZone;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             isTargetInside = true;
             AddToAttackZone(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            RemoveFromAttackZone(other.gameObject);
         }
     }
 }
