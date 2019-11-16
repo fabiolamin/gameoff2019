@@ -5,9 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private int coins = 500;
+    private int coins;
     [SerializeField]
-    private int life = 10;
+    private int life;
+
+    private void Start()
+    {
+        Coins = PlayerPrefs.GetInt("Coins");
+    }
 
     public int Coins
     {
