@@ -8,7 +8,6 @@ public class TowerMovement : MonoBehaviour
     private float rotationSpeed = 5f;
     [SerializeField]
     private AttackZone attackZone;
-    private GameObject targetToLookAt;
 
     public float SpeedRotation
     {
@@ -18,20 +17,20 @@ public class TowerMovement : MonoBehaviour
 
     private void Update()
     {
-        targetToLookAt = GameObject.FindGameObjectWithTag("Enemy");
-
-        if (targetToLookAt != null && attackZone.isTargetInside)
+        if (attackZone.isTargetInside)
         {
-            LookAtTarget();
+            foreach(GameObject enemy in attackZone.GetEnemiesInside())
+            {
+                LookAtTarget(enemy);
+            }
         }
     }
 
-    private void LookAtTarget()
+    private void LookAtTarget(GameObject target)
     {
-        if (targetToLookAt.activeSelf)
+        if (target.activeSelf)
         {
-            transform.LookAt(targetToLookAt.transform);
+            transform.LookAt(target.transform);
         }
-
     }
 }
