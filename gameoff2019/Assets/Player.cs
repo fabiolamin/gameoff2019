@@ -8,10 +8,12 @@ public class Player : MonoBehaviour
     private int coins;
     [SerializeField]
     private int life;
+    [SerializeField]
+    private int bonusStage;
 
     private void Start()
     {
-        Coins = PlayerPrefs.GetInt("Coins");
+        Coins = PlayerPrefs.GetInt("Coins")+ bonusStage;
     }
 
     public int Coins

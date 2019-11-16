@@ -17,6 +17,7 @@ public class ChangeTowers : MonoBehaviour
         {
             wallet -= price[value];
             player.Coins = wallet;
+            FindObjectOfType<ChangeCoins>().UpdateCoins();
             towers[value].SetActive(true);
         }
         else

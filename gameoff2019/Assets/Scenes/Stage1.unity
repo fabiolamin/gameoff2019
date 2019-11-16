@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 500
   life: 10
+  bonusStage: 400
 --- !u!4 &121013451
 Transform:
   m_ObjectHideFlags: 0

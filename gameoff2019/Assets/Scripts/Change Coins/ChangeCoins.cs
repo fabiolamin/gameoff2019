@@ -7,9 +7,16 @@ public class ChangeCoins : MonoBehaviour
 {
     [SerializeField]
     private Text txtCoins;
+    private Player player;
     void Start()
     {
-        txtCoins.text = PlayerPrefs.GetInt("Coins").ToString();
+        player = FindObjectOfType<Player>();
+        UpdateCoins();
+    }
+
+    public void UpdateCoins()
+    {
+        txtCoins.text = (player.Coins).ToString();
     }
 
 }
