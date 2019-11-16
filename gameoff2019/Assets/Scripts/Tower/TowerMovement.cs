@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class TowerMovement : MonoBehaviour
 {
@@ -19,16 +20,13 @@ public class TowerMovement : MonoBehaviour
     {
         if (attackZone.isTargetInside)
         {
-            foreach(GameObject enemy in attackZone.GetEnemiesInside())
-            {
-                LookAtTarget(enemy);
-            }
+            LookAtTarget(attackZone.GetEnemiesInside().FirstOrDefault());
         }
     }
 
     private void LookAtTarget(GameObject target)
     {
-        if (target.activeSelf)
+        if (target != null)
         {
             transform.LookAt(target.transform);
         }
