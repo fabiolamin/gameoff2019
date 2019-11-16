@@ -6,12 +6,11 @@ public class EnemyCollider : MonoBehaviour
 {
     private Health enemyHealth;
     private AttackDamage bulletAttackDamage;
-    private AttackZone attackZone;
+    public AttackZone AttackZone { get; set; }
 
     private void Awake()
     {
         enemyHealth = GetComponent<Health>();
-        attackZone = GameObject.FindGameObjectWithTag("AttackZone").GetComponent<AttackZone>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,7 +20,7 @@ public class EnemyCollider : MonoBehaviour
             enemyHealth.Change(-bulletAttackDamage.Value);
             if (enemyHealth.Value <= 0)
             {
-                attackZone.RemoveFromAttackZone(gameObject);
+                AttackZone.RemoveFromAttackZone(gameObject);
                 Destroy(gameObject);
             }
         }
