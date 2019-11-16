@@ -455,7 +455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856469214
 GameObject:
@@ -561,6 +561,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: towerShoot
+      value: 
+      objectReference: {fileID: 1168851631}
+    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: scaleValue
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: shootInterval
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: attackZone
+      value: 
+      objectReference: {fileID: 747305886}
     - target: {fileID: 3249605230380453322, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -616,26 +636,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
-        type: 3}
-      propertyPath: towerShoot
-      value: 
-      objectReference: {fileID: 1168851631}
-    - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
-        type: 3}
-      propertyPath: scaleValue
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
-        type: 3}
-      propertyPath: shootInterval
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
-        type: 3}
-      propertyPath: attackZone
-      value: 
-      objectReference: {fileID: 747305886}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!1001 &3253759414611008641
@@ -658,7 +658,7 @@ PrefabInstance:
     - target: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: -11.9
       objectReference: {fileID: 0}
     - target: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
         type: 3}
@@ -693,7 +693,7 @@ PrefabInstance:
     - target: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
         type: 3}
