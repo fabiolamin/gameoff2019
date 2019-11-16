@@ -22,10 +22,7 @@ public class AttackZone : MonoBehaviour
 
     private void Update()
     {
-       if(enemiesInsideAttackZone.Count == 0)
-       {
-            isTargetInside = false;
-       }
+        isTargetInside = enemiesInsideAttackZone.Count > 0 ? true : false;
     }
 
     private void SetScale()
@@ -52,7 +49,8 @@ public class AttackZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            isTargetInside = true;
+            GameObject enemy = other.gameObject;
+            enemy.GetComponent<EnemyCollider>().AttackZone = gameObject.GetComponent<AttackZone>();
             AddToAttackZone(other.gameObject);
         }
     }
