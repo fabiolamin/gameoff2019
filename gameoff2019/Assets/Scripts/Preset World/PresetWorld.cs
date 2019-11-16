@@ -30,7 +30,6 @@ public class PresetWorld : MonoBehaviour
         for (int i = 1; i < qualifiedStage.Length; i++)
         {
             bool isActive = qualifiedStage[i] != 0;
-            Debug.Log(isActive);
             stages[i].SetActive(isActive);
         }
 
