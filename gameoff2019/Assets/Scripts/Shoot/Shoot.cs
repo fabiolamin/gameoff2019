@@ -48,6 +48,6 @@ public class Shoot : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
         Rigidbody newBulletRigidbody = newBullet.GetComponent<Rigidbody>();
         newBulletRigidbody.velocity += transform.forward * speed;
-        Destroy(newBullet, 3f);
+        Destroy(newBullet, 1f);
     }
 }
