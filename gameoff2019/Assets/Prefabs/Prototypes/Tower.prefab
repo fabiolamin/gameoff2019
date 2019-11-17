@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 2930792335872746059}
   - component: {fileID: 5497193675004798747}
   - component: {fileID: 2692052124722406952}
+  - component: {fileID: 7591312419885235757}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -214,9 +215,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff8db6f43d594b4f840527082381996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 9157613571507671388, guid: 2c700a5086dbb8744914a1b05133dceb, type: 3}
+  attackZone: {fileID: 2957878242426628497}
   speed: 100
   shootInterval: 0.5
+--- !u!114 &7591312419885235757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3802323724701996254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db32ce2fc483a4b47852a395384fcc33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9157613571507671388, guid: 2c700a5086dbb8744914a1b05133dceb, type: 3}
 --- !u!1001 &2782410946542145950
 PrefabInstance:
   m_ObjectHideFlags: 0
