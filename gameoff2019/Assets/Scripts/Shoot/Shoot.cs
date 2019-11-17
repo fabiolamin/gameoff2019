@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    private GameObject bullet;
     private float timerAux;
+    private Pool bulletPool;
     [SerializeField]
     private AttackZone attackZone;
-    [SerializeField]
-    private GameObject bullet;
     [SerializeField]
     private float speed = 100f;
     [SerializeField]
@@ -28,6 +28,7 @@ public class Shoot : MonoBehaviour
     private void Awake()
     {
         timerAux = shootInterval;
+        bulletPool = GetComponent<Pool>();
     }
 
     private void FixedUpdate()
@@ -45,9 +46,7 @@ public class Shoot : MonoBehaviour
 
     private void Initiate()
     {
-        GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        Rigidbody newBulletRigidbody = newBullet.GetComponent<Rigidbody>();
-        newBulletRigidbody.velocity += transform.forward * speed;
-        Destroy(newBullet, 1f);
+        bullet = bulletPool.GetPrefabs();
+        bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
     }
 }
