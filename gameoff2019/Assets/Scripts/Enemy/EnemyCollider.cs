@@ -16,13 +16,16 @@ public class EnemyCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            bulletAttackDamage = collision.gameObject.GetComponent<AttackDamage>();
+            GameObject bullet = collision.gameObject;
+            bulletAttackDamage = bullet.GetComponent<AttackDamage>();
             enemyHealth.Change(-bulletAttackDamage.Value);
             if (enemyHealth.Value <= 0)
             {
                 AttackZone.RemoveFromAttackZone(gameObject);
                 Destroy(gameObject);
             }
+
+            bullet.SetActive(false);
         }
     }
 }
