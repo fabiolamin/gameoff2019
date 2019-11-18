@@ -54,4 +54,9 @@ public class LoadGame : MonoBehaviour
             SceneManager.LoadScene(indexScene + 1);
         }
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
