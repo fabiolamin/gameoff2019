@@ -4064,6 +4064,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1bb01c522cf44b9127102ac6208d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonsTowerSelected:
+  - {fileID: 441019878}
+  - {fileID: 441019878}
+  - {fileID: 1812061576}
+  - {fileID: 1859345048}
+  - {fileID: 1546808996}
+  - {fileID: 1713203212}
+  - {fileID: 1657135218}
+  - {fileID: 1752656317}
+  - {fileID: 455884327}
+  - {fileID: 1447205304}
+  - {fileID: 1159359314}
 --- !u!1 &1859345048
 GameObject:
   m_ObjectHideFlags: 0

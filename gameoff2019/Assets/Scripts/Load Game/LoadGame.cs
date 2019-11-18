@@ -32,6 +32,17 @@ public class LoadGame : MonoBehaviour
         PlayerPrefs.SetInt("Stage9", 0);
         PlayerPrefs.SetInt("Stage10", 0);
 
+        PlayerPrefs.SetInt("BasicTowerA", 1);
+        PlayerPrefs.SetInt("BasicTowerB", 1);
+        PlayerPrefs.SetInt("BasicTowerC", 1);
+        PlayerPrefs.SetInt("MiddleTowerA", 0);
+        PlayerPrefs.SetInt("MiddleTowerB", 0);
+        PlayerPrefs.SetInt("MiddleTowerC", 0);
+        PlayerPrefs.SetInt("MiddleTowerD", 0);
+        PlayerPrefs.SetInt("StrongTowerA", 0);
+        PlayerPrefs.SetInt("StrongTowerB", 0);
+        PlayerPrefs.SetInt("StrongTowerC", 0);
+
         PlayerPrefs.SetInt("StartedGame", 1);
     }
 
