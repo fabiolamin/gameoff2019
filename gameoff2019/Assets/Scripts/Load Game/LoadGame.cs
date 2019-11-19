@@ -65,6 +65,11 @@ public class LoadGame : MonoBehaviour
         }
     }
 
+    public void Settings()
+    {
+
+    }
+
     public void Exit()
     {
         Application.Quit();

@@ -10,7 +10,10 @@ public class SelectButtonMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gema.SetActive(false);
+        if(gema!= null)
+        {
+            gema.SetActive(false);
+        }
         loadGame = FindObjectOfType<LoadGame>();
     }
 
@@ -26,6 +29,9 @@ public class SelectButtonMenu : MonoBehaviour
                 break;
             case "BtnExit":
                 loadGame.Exit();
+                break;
+            case "BtnSettings":
+                loadGame.Settings();
                 break;
         }
     }
