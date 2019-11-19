@@ -8,7 +8,7 @@ public class Pool : MonoBehaviour
     [SerializeField]
     private float recycleInterval = 0.5f;
     [SerializeField]
-    private GameObject prefab;
+    private GameObject prefabToInstantiate;
     public GameObject[] InstantiatePrefabs { get; private set; }
 
     private void Awake()
@@ -23,20 +23,26 @@ public class Pool : MonoBehaviour
     {
         for (int x = 0; x < InstantiatePrefabs.Length; x++)
         {
-            GameObject newPrefab = Instantiate(prefab, transform.position, Quaternion.identity);
+            GameObject newPrefab = Instantiate(prefabToInstantiate, transform.position, Quaternion.identity);
             newPrefab.SetActive(false);
             InstantiatePrefabs[x] = newPrefab;
         }
     }
 
-    public void RecyclePrefab(GameObject prefab)
+    public GameObject GetPrefab(int position)
     {
-        recycleInterval -= Time.deltaTime;
-        if (recycleInterval <= 0)
+        GameObject prefab = InstantiatePrefabs[position];
+        prefab.SetActive(true);
+        return prefab;
+    }
+
+    public void RecyclePrefabs()
+    {
+        for (int x = 0; x < InstantiatePrefabs.Length; x++)
         {
-            prefab.transform.position = transform.position;
+            GameObject prefab = InstantiatePrefabs[x];
             prefab.SetActive(false);
-            recycleInterval = timerAux;
+            prefab.transform.position = transform.position;
         }
     }
 }
