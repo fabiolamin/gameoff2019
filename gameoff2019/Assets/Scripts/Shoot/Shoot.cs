@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    private int position;
     private GameObject bullet;
     private float timerAux;
     private Pool bulletPool;
@@ -29,6 +30,7 @@ public class Shoot : MonoBehaviour
     {
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
+        position = 0;
     }
 
     private void FixedUpdate()
@@ -46,7 +48,19 @@ public class Shoot : MonoBehaviour
 
     private void Initiate()
     {
-        bullet = bulletPool.GetPrefabs();
-        bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
+        if(position < bulletPool.InstantiatePrefabs.Length)
+        {
+            bullet = bulletPool.InstantiatePrefabs[position];
+            bullet.SetActive(true);
+            bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
+            position++;
+        }
+
+        else
+        {
+            position = 0;
+        }
+
+        bulletPool.RecyclePrefab(bullet);
     }
 }
