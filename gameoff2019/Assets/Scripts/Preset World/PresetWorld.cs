@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PresetWorld : MonoBehaviour
 {
     [SerializeField]
-    Text textCoins;
+    TextMeshProUGUI textCoins;
     [SerializeField]
     GameObject[] stages;
     int[] qualifiedStage;

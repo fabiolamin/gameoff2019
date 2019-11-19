@@ -8,9 +8,13 @@ public class LoadLevel : MonoBehaviour
 {
     [SerializeField]
     private int stageIndexScene;
+    [SerializeField]
+    GameObject loading;
+    int indexScene;
 
     private void OnMouseDown()
     {
+        
         switch (stageIndexScene)
         {
             case 2:
@@ -56,11 +60,18 @@ public class LoadLevel : MonoBehaviour
         }
     }  
 
-    private static void LoadStage(string stage, int sceneIndex)
+    private void LoadStage(string stage, int sceneIndex)
     {
+        indexScene = sceneIndex;
         if (PlayerPrefs.GetInt(stage) > 0)
         {
-            SceneManager.LoadScene(sceneIndex);
+            loading.SetActive(true);
+            Invoke("LoadLevelGame", 3f);
         }
+    }
+
+    private void LoadLevelGame()
+    {
+        SceneManager.LoadScene(indexScene);
     }
 }

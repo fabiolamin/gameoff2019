@@ -5,15 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LoadGame : MonoBehaviour
 {
+    [SerializeField]
+    GameObject transitionLoading;
     int indexScene;
 
     private void Start()
     {
+        transitionLoading.SetActive(false);
         indexScene = SceneManager.GetActiveScene().buildIndex;
     }
     public void Play()
     {
         PressetGame();
+        transitionLoading.SetActive(true);
+        Invoke("LoadMain", 3);
+    }
+
+    private void LoadMain()
+    {
         SceneManager.LoadScene(indexScene + 1);
     }
 
@@ -51,7 +60,8 @@ public class LoadGame : MonoBehaviour
         int startedGame = PlayerPrefs.GetInt("StartedGame");
         if (startedGame > 0)
         {
-            SceneManager.LoadScene(indexScene + 1);
+            transitionLoading.SetActive(true);
+            Invoke("LoadMain", 3);
         }
     }
 

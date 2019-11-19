@@ -4,13 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ExitGame : MonoBehaviour
 {
+    [SerializeField]
+    GameObject loading;
     int indexScene;
 
     private void Start()
     {
+        loading.SetActive(false);
         indexScene = SceneManager.GetActiveScene().buildIndex;
     }
     public void Exit()
+    {
+        loading.SetActive(true);
+        Invoke("LoadMenu", 3f);
+    }
+
+    public void LoadMenu()
     {
         SceneManager.LoadScene(indexScene - 1);
     }
