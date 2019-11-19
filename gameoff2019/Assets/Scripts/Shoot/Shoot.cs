@@ -11,9 +11,9 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private AttackZone attackZone;
     [SerializeField]
-    private float speed = 100f;
+    private float speed = 90f;
     [SerializeField]
-    private float shootInterval = 0.5f;
+    private float shootInterval = 0.7f;
     public float Speed
     {
         get { return speed; }
@@ -50,17 +50,16 @@ public class Shoot : MonoBehaviour
     {
         if(position < bulletPool.InstantiatePrefabs.Length)
         {
-            bullet = bulletPool.InstantiatePrefabs[position];
-            bullet.SetActive(true);
+            bullet = bulletPool.GetPrefab(position);
             bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
             position++;
+            
         }
 
         else
         {
+            bulletPool.RecyclePrefabs();
             position = 0;
         }
-
-        bulletPool.RecyclePrefab(bullet);
     }
 }
