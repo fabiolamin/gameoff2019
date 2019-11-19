@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChangeCoins : MonoBehaviour
 {
     [SerializeField]
-    private Text txtCoins;
+    private TextMeshProUGUI txtCoins;
     private Player player;
     void Start()
     {
