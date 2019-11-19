@@ -9,6 +9,7 @@ TagManager:
   - BaseTower
   - Bullet
   - AttackZone
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Tower Camera
   - 
   - 
   - 
