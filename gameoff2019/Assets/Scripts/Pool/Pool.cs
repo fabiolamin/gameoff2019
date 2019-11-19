@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Pool : MonoBehaviour
 {
+    private float timerAux;
+    [SerializeField]
+    private float recycleInterval = 0.5f;
     [SerializeField]
     private GameObject prefab;
-    private GameObject[] InstantiatePrefabs;
+    public GameObject[] InstantiatePrefabs { get; private set; }
 
     private void Awake()
     {
-        InstantiatePrefabs = new GameObject[60];
+        InstantiatePrefabs = new GameObject[10];
         SetPrefabs();
+
+        timerAux = recycleInterval;
     }
 
     private void SetPrefabs()
@@ -24,25 +29,14 @@ public class Pool : MonoBehaviour
         }
     }
 
-    public GameObject GetPrefabs()
+    public void RecyclePrefab(GameObject prefab)
     {
-        for (int x = 0; x < InstantiatePrefabs.Length; x++)
+        recycleInterval -= Time.deltaTime;
+        if (recycleInterval <= 0)
         {
-            GameObject prefab = InstantiatePrefabs[x];
-            prefab.SetActive(true);
-            return prefab;
-        }
-
-        RecyclePrefabs();
-        return null;
-    }
-
-    private void RecyclePrefabs()
-    {
-        for (int x = 0; x < InstantiatePrefabs.Length; x++)
-        {
-            GameObject prefab = InstantiatePrefabs[x];
             prefab.transform.position = transform.position;
+            prefab.SetActive(false);
+            recycleInterval = timerAux;
         }
     }
 }
