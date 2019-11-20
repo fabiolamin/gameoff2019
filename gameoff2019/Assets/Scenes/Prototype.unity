@@ -930,7 +930,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: shootInterval
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -940,7 +940,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: speed
-      value: 90
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3249605230380453322, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1071,7 +1071,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: shootInterval
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1081,7 +1081,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: speed
-      value: 90
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3249605230380453322, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1144,6 +1144,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9157613571507671388, guid: 2c700a5086dbb8744914a1b05133dceb,
         type: 3}
+    - target: {fileID: 7591312419885235757, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: recycleInterval
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!114 &1379228018 stripped
@@ -1287,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: shootInterval
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1297,7 +1302,7 @@ PrefabInstance:
     - target: {fileID: 2692052124722406952, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: speed
-      value: 90
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3249605230380453322, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1360,6 +1365,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9157613571507671388, guid: 2c700a5086dbb8744914a1b05133dceb,
         type: 3}
+    - target: {fileID: 7591312419885235757, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: recycleInterval
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!1001 &3253759414611008641
