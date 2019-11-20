@@ -5,9 +5,6 @@ using UnityEngine;
 public class Pool : MonoBehaviour
 {
     private GameObject prefab;
-    private float timerAux;
-    [SerializeField]
-    private float recycleInterval = 0.5f;
     [SerializeField]
     private GameObject prefabToInstantiate;
     public GameObject[] InstantiatePrefabs { get; private set; }
@@ -16,8 +13,6 @@ public class Pool : MonoBehaviour
     {
         InstantiatePrefabs = new GameObject[10];
         SetPrefabs();
-
-        timerAux = recycleInterval;
     }
 
     private void SetPrefabs()
