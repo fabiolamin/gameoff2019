@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class AttackZone : MonoBehaviour
 {
     [SerializeField]
     private float scaleValue = 5f;
-    public List<GameObject> EnemiesInsideAttackZone { get; private set; }
+    private List<GameObject> enemiesInsideAttackZone;
     public bool isTargetInside { get; private set; }
     public float ScaleValue
     {
@@ -17,12 +18,12 @@ public class AttackZone : MonoBehaviour
     private void Awake()
     {
         SetScale();
-        EnemiesInsideAttackZone = new List<GameObject>();
+        enemiesInsideAttackZone = new List<GameObject>();
     }
 
     private void Update()
     {
-        isTargetInside = EnemiesInsideAttackZone.Count > 0 ? true : false;
+        isTargetInside = enemiesInsideAttackZone.Count > 0 ? true : false;
     }
 
     private void SetScale()
@@ -32,12 +33,17 @@ public class AttackZone : MonoBehaviour
 
     public void AddToAttackZone(GameObject enemy)
     {
-        EnemiesInsideAttackZone.Add(enemy);
+        enemiesInsideAttackZone.Add(enemy);
     }
 
     public void RemoveFromAttackZone(GameObject enemy)
     {
-        EnemiesInsideAttackZone.Remove(enemy);
+        enemiesInsideAttackZone.Remove(enemy);
+    }
+
+    public GameObject GetFirstOrDefaultFromAttackZone()
+    {
+        return enemiesInsideAttackZone.FirstOrDefault();
     }
 
     private void OnTriggerEnter(Collider other)
