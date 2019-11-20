@@ -20,7 +20,7 @@ public class TowerMovement : MonoBehaviour
     {
         if (attackZone.isTargetInside)
         {
-            LookAtTarget(attackZone.GetEnemiesInside().FirstOrDefault());
+            LookAtTarget(attackZone.EnemiesInsideAttackZone.FirstOrDefault());
         }
     }
 
