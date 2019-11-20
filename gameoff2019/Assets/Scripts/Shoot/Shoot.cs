@@ -7,13 +7,14 @@ public class Shoot : MonoBehaviour
     private int position;
     private GameObject bullet;
     private float timerAux;
+    private bool isReadyToShoot;
     private Pool bulletPool;
     [SerializeField]
     private AttackZone attackZone;
     [SerializeField]
-    private float speed = 90f;
+    private float speed = 125f;
     [SerializeField]
-    private float shootInterval = 0.7f;
+    private float shootInterval = 0.8f;
     public float Speed
     {
         get { return speed; }
@@ -31,29 +32,38 @@ public class Shoot : MonoBehaviour
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
         position = 0;
+        isReadyToShoot = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (attackZone.isTargetInside)
         {
             shootInterval -= Time.deltaTime;
             if (shootInterval <= 0)
             {
-                Initiate();
+                isReadyToShoot = true;
                 shootInterval = timerAux;
             }
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (isReadyToShoot)
+        {
+            Initiate();
+            isReadyToShoot = false;
+        }
+    }
+
     private void Initiate()
     {
-        if(position < bulletPool.InstantiatePrefabs.Length)
+        if(position <= bulletPool.InstantiatePrefabs.Length - 1)
         {
             bullet = bulletPool.GetPrefab(position);
             bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
             position++;
-            
         }
 
         else
