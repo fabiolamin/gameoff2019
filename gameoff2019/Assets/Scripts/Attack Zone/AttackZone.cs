@@ -5,9 +5,9 @@ using System.Linq;
 
 public class AttackZone : MonoBehaviour
 {
+    private List<GameObject> enemiesInsideAttackZone;
     [SerializeField]
     private float scaleValue = 5f;
-    private List<GameObject> enemiesInsideAttackZone;
     public bool isTargetInside { get; private set; }
     public float ScaleValue
     {
