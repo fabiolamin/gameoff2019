@@ -7,6 +7,10 @@ public class LoadGame : MonoBehaviour
 {
     [SerializeField]
     GameObject transitionLoading;
+    [SerializeField] 
+    GameObject canvasCredits;
+    [SerializeField] 
+    GameObject canvasSettigs;
     int indexScene;
 
     private void Start()
@@ -68,6 +72,16 @@ public class LoadGame : MonoBehaviour
     public void Settings()
     {
 
+    }
+
+    public void Credits()
+    {
+        canvasCredits.SetActive(true);
+    }
+
+    public void ExitCredits()
+    {
+        canvasCredits.SetActive(false);
     }
 
     public void Exit()

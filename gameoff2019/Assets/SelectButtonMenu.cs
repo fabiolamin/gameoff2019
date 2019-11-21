@@ -33,6 +33,9 @@ public class SelectButtonMenu : MonoBehaviour
             case "BtnSettings":
                 loadGame.Settings();
                 break;
+            case "BtnCredits":
+                loadGame.Credits();
+                break;
         }
     }
 
