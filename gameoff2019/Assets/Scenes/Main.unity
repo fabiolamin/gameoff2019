@@ -1038,6 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderMusic: {fileID: 1511525643}
   sliderEffects: {fileID: 375067240}
+  musicScene: {fileID: 886410240}
 --- !u!1 &386547994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,11 +1921,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6203ada1ec19a174db5f06908d018d75, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

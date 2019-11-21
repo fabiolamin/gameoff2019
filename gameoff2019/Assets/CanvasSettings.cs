@@ -7,6 +7,7 @@ public class CanvasSettings : MonoBehaviour
 {
     [SerializeField] Slider sliderMusic;
     [SerializeField] Slider sliderEffects;
+    [SerializeField] AudioSource musicScene;
     public void Start()
     {
         sliderMusic.value = PlayerPrefs.GetFloat("VolumeMusic");
@@ -14,6 +15,7 @@ public class CanvasSettings : MonoBehaviour
     }
     public void ChangeMusic()
     {
+        musicScene.volume = sliderMusic.value;
         PlayerPrefs.SetFloat("VolumeMusic", sliderMusic.value);
     }
     public void ChangeEffect()
