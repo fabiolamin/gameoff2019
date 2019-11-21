@@ -35,17 +35,26 @@ public class SelectButtonMenu : MonoBehaviour
                 break;
             case "BtnCredits":
                 loadGame.Credits();
+                gema.SetActive(false);
                 break;
         }
     }
 
     private void OnMouseEnter()
     {
-        gema.SetActive(true);
+        if (gema != null)
+        {
+            gema.SetActive(true);
+        }
+        
     }
 
     private void OnMouseExit()
     {
-        gema.SetActive(false);
+        if (gema != null)
+        {
+            gema.SetActive(false);
+        }
+        
     }
 }

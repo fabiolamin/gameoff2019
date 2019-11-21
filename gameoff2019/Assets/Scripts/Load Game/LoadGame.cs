@@ -11,12 +11,27 @@ public class LoadGame : MonoBehaviour
     GameObject canvasCredits;
     [SerializeField] 
     GameObject canvasSettigs;
+    [SerializeField]
+    GameObject audioAmbient;
+    [SerializeField]
+    GameObject menu;
     int indexScene;
 
     private void Start()
     {
         transitionLoading.SetActive(false);
         indexScene = SceneManager.GetActiveScene().buildIndex;
+        if (!(PlayerPrefs.GetInt("FirstPlay") > 0))
+        {
+            float volume = audioAmbient.GetComponent<AudioSource>().volume;
+            PlayerPrefs.SetFloat("VolumeMusic", volume);
+            PlayerPrefs.SetFloat("VolumeEffects", volume);
+            PlayerPrefs.SetInt("FirstPlay", 1);
+        }
+        else
+        {
+            audioAmbient.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolumeMusic");
+        }
     }
     public void Play()
     {
@@ -71,17 +86,26 @@ public class LoadGame : MonoBehaviour
 
     public void Settings()
     {
-
+        menu.SetActive(false);
+        canvasSettigs.SetActive(true);
     }
 
     public void Credits()
     {
+        menu.SetActive(false);
         canvasCredits.SetActive(true);
     }
 
     public void ExitCredits()
     {
+        menu.SetActive(true);
         canvasCredits.SetActive(false);
+    }
+
+    public void ExitSettings()
+    {
+        menu.SetActive(true);
+        canvasSettigs.SetActive(false);
     }
 
     public void Exit()
