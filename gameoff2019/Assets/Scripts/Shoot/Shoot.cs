@@ -14,7 +14,7 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private float speed = 125f;
     [SerializeField]
-    private float shootInterval = 0.8f;
+    private float shootInterval = 0.5f;
     public float Speed
     {
         get { return speed; }
@@ -62,7 +62,7 @@ public class Shoot : MonoBehaviour
         if(position <= bulletPool.InstantiatePrefabs.Length - 1)
         {
             bullet = bulletPool.GetPrefab(position);
-            bullet.GetComponent<Rigidbody>().velocity += transform.forward * speed;
+            bullet.GetComponent<Rigidbody>().velocity = transform.forward * speed;
             position++;
         }
 
