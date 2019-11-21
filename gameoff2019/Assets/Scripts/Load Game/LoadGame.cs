@@ -14,6 +14,8 @@ public class LoadGame : MonoBehaviour
     [SerializeField]
     GameObject audioAmbient;
     [SerializeField]
+    GameObject[] audioEffect;
+    [SerializeField]
     GameObject menu;
     int indexScene;
 
@@ -31,6 +33,8 @@ public class LoadGame : MonoBehaviour
         else
         {
             audioAmbient.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolumeMusic");
+            audioEffect[0].GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolumeEffects");
+            audioEffect[1].GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolumeEffects");
         }
     }
     public void Play()

@@ -6,11 +6,15 @@ public class SelectButtonMenu : MonoBehaviour
 {
     [SerializeField]
     GameObject gema;
+    [SerializeField]
+    AudioSource audioEffectSelecting;
+    [SerializeField]
+    AudioSource audioEffectSelected;
     LoadGame loadGame;
     // Start is called before the first frame update
     void Start()
     {
-        if(gema!= null)
+        if (gema!= null)
         {
             gema.SetActive(false);
         }
@@ -19,6 +23,7 @@ public class SelectButtonMenu : MonoBehaviour
 
     private void OnMouseDown()
     {
+        audioEffectSelected.Play();
         switch (gameObject.name)
         {
             case "BtnPlay":
@@ -42,8 +47,10 @@ public class SelectButtonMenu : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        
         if (gema != null)
         {
+            audioEffectSelecting.Play();
             gema.SetActive(true);
         }
         
