@@ -8,6 +8,7 @@ public class AttackZone : MonoBehaviour
     private List<GameObject> enemiesInsideAttackZone;
     [SerializeField]
     private float scaleValue = 5f;
+    public Points towerPoints;
     public bool isTargetInside { get; private set; }
     public float ScaleValue
     {
@@ -51,7 +52,7 @@ public class AttackZone : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             GameObject enemy = other.gameObject;
-            enemy.GetComponent<EnemyCollider>().AttackZone = gameObject.GetComponent<AttackZone>();
+            enemy.GetComponent<EnemyCollider>().TowerAttackZone = gameObject.GetComponent<AttackZone>();
             AddToAttackZone(other.gameObject);
         }
     }
