@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3249605230380453322}
   - component: {fileID: 478731376201140798}
+  - component: {fileID: 6108620888710793889}
   - component: {fileID: 3249605230380453317}
   - component: {fileID: 3249605230380453316}
   - component: {fileID: 3249605230380453319}
@@ -51,6 +52,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   attackZone: {fileID: 2957878242426628497}
+--- !u!114 &6108620888710793889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249605230380453318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161f425b1b907eb44af02a5dd38e0ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &3249605230380453317
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -247,7 +260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db32ce2fc483a4b47852a395384fcc33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recycleInterval: 0.5
   prefabToInstantiate: {fileID: 0}
 --- !u!1001 &2782410946542145950
 PrefabInstance:
@@ -263,9 +275,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1121786172662593551, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
         type: 3}
-      propertyPath: scaleValue
-      value: 5
-      objectReference: {fileID: 0}
+      propertyPath: towerPoints
+      value: 
+      objectReference: {fileID: 6108620888710793889}
     - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -319,26 +331,6 @@ PrefabInstance:
     - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6332943
-      objectReference: {fileID: 0}
-    - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.41313574
-      objectReference: {fileID: 0}
-    - target: {fileID: 830341006260755128, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7827176
-      objectReference: {fileID: 0}
-    - target: {fileID: 830341006260755134, guid: a94e42847e6fbfd4fbc60674bdcab4a6,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
