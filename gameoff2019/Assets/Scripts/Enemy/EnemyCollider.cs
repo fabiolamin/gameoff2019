@@ -6,7 +6,7 @@ public class EnemyCollider : MonoBehaviour
 {
     private Health enemyHealth;
     private AttackDamage bulletAttackDamage;
-    public AttackZone AttackZone { get; set; }
+    public AttackZone TowerAttackZone { get; set; }
 
     private void Awake()
     {
@@ -21,7 +21,8 @@ public class EnemyCollider : MonoBehaviour
             enemyHealth.Change(-bulletAttackDamage.Value);
             if (enemyHealth.Value <= 0)
             {
-                AttackZone.RemoveFromAttackZone(gameObject);
+                TowerAttackZone.RemoveFromAttackZone(gameObject);
+                TowerAttackZone.towerPoints.Increase(10);
                 Destroy(gameObject);
             }
 
