@@ -920,7 +920,7 @@ PrefabInstance:
     - target: {fileID: 3249605230380453318, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1012,6 +1012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: recycleInterval
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591312419885235757, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: amountToInstantiate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
@@ -1154,6 +1159,11 @@ PrefabInstance:
       propertyPath: recycleInterval
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7591312419885235757, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: amountToInstantiate
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!114 &1379228018 stripped
@@ -1287,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 3249605230380453318, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
@@ -1379,6 +1389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: recycleInterval
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591312419885235757, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: amountToInstantiate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
