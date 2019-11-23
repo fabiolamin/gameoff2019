@@ -23,7 +23,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if (gameObject.activeSelf)
+        {
+            Move();
+        }
     }
 
     void Move()
