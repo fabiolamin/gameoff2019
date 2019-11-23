@@ -6,7 +6,7 @@ public class Pool : MonoBehaviour
 {
     private GameObject prefab;
     [SerializeField]
-    private GameObject prefabToInstantiate;
+    private GameObject[] prefabToInstantiate;
     [SerializeField]
     private int amountToInstantiate = 10;
     public GameObject[] InstantiatePrefabs { get; private set; }
@@ -21,7 +21,8 @@ public class Pool : MonoBehaviour
     {
         for (int x = 0; x < InstantiatePrefabs.Length; x++)
         {
-            prefab = Instantiate(prefabToInstantiate, transform.position, Quaternion.identity);
+            int random = Random.Range(0, prefabToInstantiate.Length);
+            prefab = Instantiate(prefabToInstantiate[random], transform.position, Quaternion.identity);
             prefab.SetActive(false);
             InstantiatePrefabs[x] = prefab;
         }
@@ -29,9 +30,14 @@ public class Pool : MonoBehaviour
 
     public GameObject GetPrefab(int position)
     {
-        prefab = InstantiatePrefabs[position];
-        prefab.SetActive(true);
+        ChangePrefabStatus(position,true);
         return prefab;
+    }
+
+    public void ChangePrefabStatus(int position, bool status)
+    {
+        prefab = InstantiatePrefabs[position];
+        prefab.SetActive(status);
     }
 
     public void RecyclePrefabs()
@@ -42,5 +48,18 @@ public class Pool : MonoBehaviour
             prefab.SetActive(false);
             prefab.transform.position = transform.position;
         }
+    }
+
+    public int GetPrefabPosition(GameObject prefabToFind)
+    {
+        for (int x = 0; x < InstantiatePrefabs.Length; x++)
+        {
+            if(prefabToFind == InstantiatePrefabs[x])
+            {
+                return x;
+            }
+        }
+
+        return -1;
     }
 }
