@@ -917,6 +917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3249605230380453318, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
       propertyPath: towerShoot
@@ -1278,6 +1283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249605230380453318, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2957878242426628497, guid: 074dcaaf3f166c24f871a19af0b1180d,
         type: 3}
