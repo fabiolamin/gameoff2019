@@ -7,11 +7,13 @@ public class Pool : MonoBehaviour
     private GameObject prefab;
     [SerializeField]
     private GameObject prefabToInstantiate;
+    [SerializeField]
+    private int amountToInstantiate = 10;
     public GameObject[] InstantiatePrefabs { get; private set; }
 
     private void Awake()
     {
-        InstantiatePrefabs = new GameObject[10];
+        InstantiatePrefabs = new GameObject[amountToInstantiate];
         SetPrefabs();
     }
 
