@@ -9,7 +9,6 @@ public class AttackDamage : MonoBehaviour
     public int Value
     {
         get { return value; }
-        set { this.value = value; }
     }
 
     public void Change(int amount)
