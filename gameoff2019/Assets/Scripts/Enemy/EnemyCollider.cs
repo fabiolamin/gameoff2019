@@ -6,11 +6,13 @@ public class EnemyCollider : MonoBehaviour
 {
     private Health enemyHealth;
     private AttackDamage bulletAttackDamage;
+    private Pool enemyPool;
     public AttackZone TowerAttackZone { get; set; }
 
     private void Awake()
     {
         enemyHealth = GetComponent<Health>();
+        enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,7 +25,11 @@ public class EnemyCollider : MonoBehaviour
             {
                 TowerAttackZone.RemoveFromAttackZone(gameObject);
                 TowerAttackZone.towerPoints.Change(10);
-                Destroy(gameObject);
+                int position = enemyPool.GetPrefabPosition(bullet);
+                if(position >= 0)
+                {
+                    enemyPool.ChangePrefabStatus(position, false);
+                }
             }
 
             bullet.SetActive(false);
