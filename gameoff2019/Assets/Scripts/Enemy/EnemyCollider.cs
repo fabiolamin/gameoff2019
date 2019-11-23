@@ -22,7 +22,7 @@ public class EnemyCollider : MonoBehaviour
             if (enemyHealth.Value <= 0)
             {
                 TowerAttackZone.RemoveFromAttackZone(gameObject);
-                TowerAttackZone.towerPoints.Increase(10);
+                TowerAttackZone.towerPoints.Change(10);
                 Destroy(gameObject);
             }
 
