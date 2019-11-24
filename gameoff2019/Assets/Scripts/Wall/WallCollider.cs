@@ -8,7 +8,8 @@ public class WallCollider : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            GameObject enemy = other.gameObject;
+            enemy.SetActive(false);
         }
     }
 }
