@@ -25,11 +25,7 @@ public class EnemyCollider : MonoBehaviour
             {
                 TowerAttackZone.RemoveFromAttackZone(gameObject);
                 TowerAttackZone.towerPoints.Change(10);
-                int position = enemyPool.GetPrefabPosition(bullet);
-                if(position >= 0)
-                {
-                    enemyPool.ChangePrefabStatus(position, false);
-                }
+                gameObject.SetActive(false);
             }
 
             bullet.SetActive(false);
