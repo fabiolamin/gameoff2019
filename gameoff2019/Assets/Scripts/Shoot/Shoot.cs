@@ -15,6 +15,8 @@ public class Shoot : MonoBehaviour
     private float speed = 125f;
     [SerializeField]
     private float shootInterval = 0.5f;
+    [SerializeField]
+    private ParticleSystem particle;
     public float Speed
     {
         get { return speed; }
@@ -42,6 +44,7 @@ public class Shoot : MonoBehaviour
             shootInterval -= Time.deltaTime;
             if (shootInterval <= 0)
             {
+                //particle.Play();
                 isReadyToShoot = true;
                 shootInterval = timerAux;
             }
