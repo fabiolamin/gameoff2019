@@ -44,22 +44,8 @@ public class Pool : MonoBehaviour
     {
         for (int x = 0; x < InstantiatePrefabs.Length; x++)
         {
-            prefab = InstantiatePrefabs[x];
-            prefab.SetActive(false);
+            ChangePrefabStatus(x, false);
             prefab.transform.position = transform.position;
         }
-    }
-
-    public int GetPrefabPosition(GameObject prefabToFind)
-    {
-        for (int x = 0; x < InstantiatePrefabs.Length; x++)
-        {
-            if(prefabToFind == InstantiatePrefabs[x])
-            {
-                return x;
-            }
-        }
-
-        return -1;
     }
 }
