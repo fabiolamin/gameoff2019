@@ -657,7 +657,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3105721964181781531, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!1 &929231217
 GameObject:
@@ -1015,7 +1016,43 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3105721964206821533, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821521, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821523, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821527, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821529, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821531, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105721964206821535, guid: 074dcaaf3f166c24f871a19af0b1180d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3105721964181781531, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 074dcaaf3f166c24f871a19af0b1180d, type: 3}
 --- !u!1 &1856469214
 GameObject:
