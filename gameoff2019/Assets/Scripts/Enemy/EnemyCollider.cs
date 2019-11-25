@@ -23,12 +23,21 @@ public class EnemyCollider : MonoBehaviour
             enemyHealth.Change(-bulletAttackDamage.Value);
             if (enemyHealth.Value <= 0)
             {
-                TowerAttackZone.RemoveFromAttackZone(gameObject);
+                CleanEnemyInTowers();
                 TowerAttackZone.towerPoints.Change(10);
                 gameObject.SetActive(false);
             }
 
             bullet.SetActive(false);
+        }
+    }
+
+    private void CleanEnemyInTowers() // clean all towers that have the enemy 
+    {
+        AttackZone[] attackZones = FindObjectsOfType<AttackZone>();
+        foreach (AttackZone at in attackZones)
+        {
+            at.RemoveFromAttackZone(gameObject);
         }
     }
 }
