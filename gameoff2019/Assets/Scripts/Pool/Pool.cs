@@ -7,9 +7,11 @@ public class Pool : MonoBehaviour
     private GameObject prefab;
     [SerializeField]
     private GameObject[] prefabToInstantiate;
+    [SerializeField]
     private int amountToInstantiate = 10;
     [SerializeField]
     private GameObject allObjects;
+
     public GameObject[] InstantiatePrefabs { get; private set; }
 
     private void Awake()
@@ -50,5 +52,10 @@ public class Pool : MonoBehaviour
             ChangePrefabStatus(x, false);
             prefab.transform.position = transform.position;
         }
+    }
+
+    public int GetInstances()
+    {
+        return amountToInstantiate;
     }
 }
