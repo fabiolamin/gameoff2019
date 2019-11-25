@@ -20,4 +20,6 @@ public class ChangeCoins : MonoBehaviour
         txtCoins.text = (player.Coins).ToString();
     }
 
+
+
 }
