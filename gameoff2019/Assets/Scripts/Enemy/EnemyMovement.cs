@@ -15,6 +15,11 @@ public class EnemyMovement : MonoBehaviour
         private set { speed = value; }
     }
 
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Finish").transform;
+    }
+
     private void Awake()
     {
         enemyNavMeshAgent = GetComponent<NavMeshAgent>();
