@@ -18,7 +18,7 @@ public class SelectBase : MonoBehaviour
         toolbarBase = goToolbarBaseTower;
         animator = toolbarBase.GetComponent<Animator>();
     }
-    private void OnMouseDown()
+    public void SelectIsBase()
     {
         controlChangingTowers.SetChangeTowers(GetComponent<ChangeTowers>());
         animator.SetBool("isOpen", true);

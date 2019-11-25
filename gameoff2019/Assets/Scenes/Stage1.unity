@@ -1107,6 +1107,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3253759413634005126, guid: 366e69bb5a994d54ea0bd38b70087b6c,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 3253759413634005130, guid: 366e69bb5a994d54ea0bd38b70087b6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1161,11 +1166,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3253759413634005126, guid: 366e69bb5a994d54ea0bd38b70087b6c,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366e69bb5a994d54ea0bd38b70087b6c, type: 3}
@@ -3487,8 +3487,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2125520591}
   m_HandleRect: {fileID: 2125520590}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.6356899
+  m_Value: 0.0000001193958
+  m_Size: 0.63568974
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
