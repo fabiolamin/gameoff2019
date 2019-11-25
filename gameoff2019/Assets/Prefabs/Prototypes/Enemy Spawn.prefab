@@ -59,6 +59,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToInstantiate:
   - {fileID: 4318050590695053249, guid: 9b437bb2511c7674f9a6c1e8bd47e646, type: 3}
-  amountToInstantiate: 10
-  allEnemies: {fileID: 413596228674290219, guid: c700ae2ea250d95448d7046bfaa00eaf,
+  allObjects: {fileID: 369005829447310926, guid: c700ae2ea250d95448d7046bfaa00eaf,
     type: 3}

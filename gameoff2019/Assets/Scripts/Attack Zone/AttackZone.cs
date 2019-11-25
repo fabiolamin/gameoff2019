@@ -18,7 +18,7 @@ public class AttackZone : MonoBehaviour
 
     private void Awake()
     {
-        SetScale();
+        //SetScale();
         enemiesInsideAttackZone = new List<GameObject>();
     }
 

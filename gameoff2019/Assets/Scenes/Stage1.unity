@@ -2709,6 +2709,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 6504416077008009628, guid: 840ecff30c94ec74a93e0e3573c6a92d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7790957069350210447, guid: 840ecff30c94ec74a93e0e3573c6a92d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3482,8 +3487,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2125520591}
   m_HandleRect: {fileID: 2125520590}
   m_Direction: 0
-  m_Value: 0.0000001193958
-  m_Size: 0.63568974
+  m_Value: 0
+  m_Size: 0.6356899
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4236,6 +4241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 6504416077008009628, guid: 840ecff30c94ec74a93e0e3573c6a92d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7790957069350210447, guid: 840ecff30c94ec74a93e0e3573c6a92d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4452,6 +4462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 6504416077008009628, guid: 840ecff30c94ec74a93e0e3573c6a92d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790957069350210447, guid: 840ecff30c94ec74a93e0e3573c6a92d,
         type: 3}
@@ -5211,6 +5226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 6504416077008009628, guid: 840ecff30c94ec74a93e0e3573c6a92d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790957069350210447, guid: 840ecff30c94ec74a93e0e3573c6a92d,
         type: 3}
@@ -7101,6 +7121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 6504416077008009628, guid: 840ecff30c94ec74a93e0e3573c6a92d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7790957069350210447, guid: 840ecff30c94ec74a93e0e3573c6a92d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7809,51 +7834,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3109409748692222363, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1301400350286129071, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281045267235813943, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263672987790138198, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045267654445354633, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930313421099464441, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 920564046822103007, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668127157224351372, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6652517847540988305, guid: 840ecff30c94ec74a93e0e3573c6a92d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840ecff30c94ec74a93e0e3573c6a92d, type: 3}

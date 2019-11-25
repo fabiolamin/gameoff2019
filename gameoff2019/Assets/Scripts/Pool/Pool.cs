@@ -9,12 +9,12 @@ public class Pool : MonoBehaviour
     private GameObject[] prefabToInstantiate;
     private int amountToInstantiate = 10;
     [SerializeField]
-    private GameObject allEnemies;
+    private GameObject allObjects;
     public GameObject[] InstantiatePrefabs { get; private set; }
 
     private void Awake()
     {
-        allEnemies = Instantiate(allEnemies, transform.position, Quaternion.identity); ;
+        allObjects = Instantiate(allObjects, transform.position, Quaternion.identity); ;
         InstantiatePrefabs = new GameObject[amountToInstantiate];
         SetPrefabs();
     }
@@ -25,7 +25,7 @@ public class Pool : MonoBehaviour
         {
             int random = Random.Range(0, prefabToInstantiate.Length);
             prefab = Instantiate(prefabToInstantiate[random], transform.position, Quaternion.identity);
-            prefab.transform.SetParent(allEnemies.transform);
+            prefab.transform.SetParent(allObjects.transform);
             prefab.SetActive(false);
             InstantiatePrefabs[x] = prefab;
         }
