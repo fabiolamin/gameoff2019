@@ -19,6 +19,7 @@ public class Shoot : MonoBehaviour
     private int forceShoot = 1;
     [SerializeField]
     private ParticleSystem particle;
+    private AudioSource audioSource;
     public float Speed
     {
         get { return speed; }
@@ -33,6 +34,8 @@ public class Shoot : MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefs.GetFloat("VolumeEffects")/2;
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
         foreach(GameObject go in bulletPool.InstantiatePrefabs)
@@ -50,10 +53,19 @@ public class Shoot : MonoBehaviour
             shootInterval -= Time.deltaTime;
             if (shootInterval <= 0)
             {
+                PlaySoundShot();
                 //particle.Play();
                 isReadyToShoot = true;
                 shootInterval = timerAux;
             }
+        }
+    }
+
+    private void PlaySoundShot()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
         }
     }
 
