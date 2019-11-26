@@ -9,10 +9,12 @@ public class ControlChips : MonoBehaviour
     [SerializeField]
     private GameObject canvasGameOver;
     private int chips;
+    private WinStage winStage;
     public bool gameOver { get; private set; }
 
     private void Start()
     {
+        winStage = FindObjectOfType<WinStage>();
         gameOver = false;
         chips = goChips.Length;
         canvasGameOver.SetActive(false);
@@ -28,6 +30,10 @@ public class ControlChips : MonoBehaviour
             {
                 gameOver = true;
                 canvasGameOver.SetActive(true);
+            }
+            else
+            {
+                winStage.CountEnemyDestroyed();
             }
         }
         
