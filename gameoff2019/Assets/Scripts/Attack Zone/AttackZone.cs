@@ -5,31 +5,19 @@ using System.Linq;
 
 public class AttackZone : MonoBehaviour
 {
+    
     private List<GameObject> enemiesInsideAttackZone;
-    [SerializeField]
-    private float scaleValue = 5f;
     public Points towerPoints;
     public bool isTargetInside { get; private set; }
-    public float ScaleValue
-    {
-        get { return scaleValue; }
-        set { scaleValue = value; }
-    }
 
     private void Awake()
     {
-        //SetScale();
         enemiesInsideAttackZone = new List<GameObject>();
     }
 
     private void Update()
     {
         isTargetInside = enemiesInsideAttackZone.Count > 0 ? true : false;
-    }
-
-    private void SetScale()
-    {
-        transform.localScale = Vector3.one * scaleValue;
     }
 
     public void AddToAttackZone(GameObject enemy)

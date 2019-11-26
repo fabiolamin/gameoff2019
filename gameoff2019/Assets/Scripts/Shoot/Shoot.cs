@@ -16,6 +16,8 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private float shootInterval = 0.5f;
     [SerializeField]
+    private int forceShoot = 1;
+    [SerializeField]
     private ParticleSystem particle;
     public float Speed
     {
@@ -33,6 +35,10 @@ public class Shoot : MonoBehaviour
     {
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
+        foreach(GameObject go in bulletPool.InstantiatePrefabs)
+        {
+            go.GetComponent<AttackDamage>().Value = forceShoot;
+        }
         position = 0;
         isReadyToShoot = false;
     }
