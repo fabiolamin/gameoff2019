@@ -11,12 +11,14 @@ public class EnemyCollider : MonoBehaviour
     private int bonusCoin;
     public AttackZone TowerAttackZone { get; set; }
     public PlayerCoins playerCoins;
+    private WinStage winStage;
 
     private void Awake()
     {
         enemyHealth = GetComponent<Health>();
         enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
         playerCoins = FindObjectOfType<PlayerCoins>();
+        winStage = FindObjectOfType<WinStage>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -28,6 +30,7 @@ public class EnemyCollider : MonoBehaviour
             if (enemyHealth.Value <= 0)
             {
                 playerCoins.AddCoinsPlayer(bonusCoin);
+                winStage.CountEnemyDestroyed();
                 CleanEnemyInTowers();
                 TowerAttackZone.towerPoints.Change(10);
                 gameObject.SetActive(false);

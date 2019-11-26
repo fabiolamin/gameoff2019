@@ -9,9 +9,11 @@ public class ControlChips : MonoBehaviour
     [SerializeField]
     private GameObject canvasGameOver;
     private int chips;
+    public bool gameOver { get; private set; }
 
     private void Start()
     {
+        gameOver = false;
         chips = goChips.Length;
         canvasGameOver.SetActive(false);
     }
@@ -24,6 +26,7 @@ public class ControlChips : MonoBehaviour
             chips--;
             if (chips <= 0)
             {
+                gameOver = true;
                 canvasGameOver.SetActive(true);
             }
         }
