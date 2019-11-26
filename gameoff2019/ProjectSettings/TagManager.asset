@@ -11,6 +11,7 @@ TagManager:
   - AttackZone
   - Tower
   - EnemySpawn
+  - Trash
   layers:
   - Default
   - TransparentFX

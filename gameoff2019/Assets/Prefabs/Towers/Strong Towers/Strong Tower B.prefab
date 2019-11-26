@@ -66,6 +66,7 @@ MonoBehaviour:
   amountToInstantiate: 10
   allObjects: {fileID: 369005829447310926, guid: c700ae2ea250d95448d7046bfaa00eaf,
     type: 3}
+  namePool: Bullets Strong Tower B
 --- !u!1 &4999814232055951614
 GameObject:
   m_ObjectHideFlags: 0

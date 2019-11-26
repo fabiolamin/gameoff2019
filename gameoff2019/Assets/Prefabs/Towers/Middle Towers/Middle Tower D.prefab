@@ -177,6 +177,7 @@ MonoBehaviour:
   amountToInstantiate: 10
   allObjects: {fileID: 369005829447310926, guid: c700ae2ea250d95448d7046bfaa00eaf,
     type: 3}
+  namePool: Bullets Middle Tower D
 --- !u!1001 &4357288018928948972
 PrefabInstance:
   m_ObjectHideFlags: 0
