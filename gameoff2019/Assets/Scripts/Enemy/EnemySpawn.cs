@@ -1,17 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class EnemySpawn : MonoBehaviour
 {
     private float timerAux;
-    private int position;
-    private Pool enemyPool;
+    public int position { get; private set; }
+    public Pool enemyPool { get; private set; }
     [SerializeField]
     private float spawnInterval = 1f;
-    [SerializeField]
-    private Slider slideBarEnemies;
+    
 
     public float SpawnInterval
     {
@@ -24,8 +23,7 @@ public class EnemySpawn : MonoBehaviour
         timerAux = spawnInterval;
         position = 0;
         enemyPool = GetComponent<Pool>();
-        slideBarEnemies.maxValue = enemyPool.GetInstances();
-        slideBarEnemies.value = position;
+        
     }
     private void Update()
     {
@@ -42,7 +40,6 @@ public class EnemySpawn : MonoBehaviour
         {
             enemyPool.ChangePrefabStatus(position, true);
             position++;
-            slideBarEnemies.value = position;
         }
     }
 }

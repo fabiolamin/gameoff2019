@@ -3421,6 +3421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawn
       objectReference: {fileID: 0}
+    - target: {fileID: 5208390869711618241, guid: f8881ef831e1a414db227baf8c58a7ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5208390869711618240, guid: f8881ef831e1a414db227baf8c58a7ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4964,6 +4969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210306686}
   - component: {fileID: 1210306687}
+  - component: {fileID: 1210306688}
   m_Layer: 5
   m_Name: BarEnemies
   m_TagString: Untagged
@@ -5043,6 +5049,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1210306688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210306685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31b3effc2759b8468c172e33c0c8c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slideBarEnemies: {fileID: 1210306687}
 --- !u!1 &1224003121
 GameObject:
   m_ObjectHideFlags: 0

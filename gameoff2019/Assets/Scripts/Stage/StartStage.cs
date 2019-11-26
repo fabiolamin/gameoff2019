@@ -9,6 +9,8 @@ public class StartStage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        BarEnemies barEnemies = FindObjectOfType<BarEnemies>();
+        barEnemies.SetEnemySpawn(spawnEnimies);
         spawnEnimies.SetActive(false);
     }
 
