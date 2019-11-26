@@ -10,11 +10,13 @@ public class EnemyCollider : MonoBehaviour
     [SerializeField]
     private int bonusCoin;
     public AttackZone TowerAttackZone { get; set; }
+    public PlayerCoins playerCoins;
 
     private void Awake()
     {
         enemyHealth = GetComponent<Health>();
         enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
+        playerCoins = FindObjectOfType<PlayerCoins>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,7 +27,7 @@ public class EnemyCollider : MonoBehaviour
             enemyHealth.Change(-bulletAttackDamage.Value);
             if (enemyHealth.Value <= 0)
             {
-                AddCoinsPlayer();
+                playerCoins.AddCoinsPlayer(bonusCoin);
                 CleanEnemyInTowers();
                 TowerAttackZone.towerPoints.Change(10);
                 gameObject.SetActive(false);
@@ -35,14 +37,7 @@ public class EnemyCollider : MonoBehaviour
         }
     }
 
-    private void AddCoinsPlayer()
-    {
-        Player player = FindObjectOfType<Player>();
-        player.Coins += bonusCoin;
-
-        ChangeCoins changeCoins = FindObjectOfType<ChangeCoins>();
-        changeCoins.UpdateCoins();
-    }
+    
 
     private void CleanEnemyInTowers() // clean all towers that have the enemy 
     {
