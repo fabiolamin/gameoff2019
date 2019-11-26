@@ -12,14 +12,19 @@ public class EnemyCollider : MonoBehaviour
     public AttackZone TowerAttackZone { get; set; }
     public PlayerCoins playerCoins;
     private WinStage winStage;
+    [SerializeField]
+    private AudioClip soundExplosion;
+    private AudioSource audioSources;
 
     private void Awake()
     {
+        audioSources = GetComponent<AudioSource>();
         enemyHealth = GetComponent<Health>();
         enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
         playerCoins = FindObjectOfType<PlayerCoins>();
         winStage = FindObjectOfType<WinStage>();
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -27,13 +32,19 @@ public class EnemyCollider : MonoBehaviour
             GameObject bullet = collision.gameObject;
             bulletAttackDamage = bullet.GetComponent<AttackDamage>();
             enemyHealth.Change(-bulletAttackDamage.Value);
+            
             if (enemyHealth.Value <= 0)
             {
+                AudioSource.PlayClipAtPoint(soundExplosion,transform.position);
                 playerCoins.AddCoinsPlayer(bonusCoin);
                 winStage.CountEnemyDestroyed();
                 CleanEnemyInTowers();
                 TowerAttackZone.towerPoints.Change(10);
                 gameObject.SetActive(false);
+            }
+            else
+            {
+                audioSources.Play();
             }
 
             bullet.SetActive(false);
