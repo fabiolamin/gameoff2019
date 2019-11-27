@@ -12,6 +12,7 @@ TagManager:
   - Tower
   - EnemySpawn
   - Trash
+  - Garbage
   layers:
   - Default
   - TransparentFX

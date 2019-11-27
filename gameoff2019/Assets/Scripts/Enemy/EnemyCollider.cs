@@ -14,6 +14,10 @@ public class EnemyCollider : MonoBehaviour
     private WinStage winStage;
     [SerializeField]
     private AudioClip soundExplosion;
+    [SerializeField]
+    private ParticleSystem damangeParticle;
+    [SerializeField]
+    private ParticleSystem explosionParticle;
     private AudioSource audioSources;
 
     private void Awake()
@@ -35,6 +39,9 @@ public class EnemyCollider : MonoBehaviour
             
             if (enemyHealth.Value <= 0)
             {
+                explosionParticle.transform.SetParent(GameObject.FindGameObjectWithTag("Garbage").transform);
+                explosionParticle.Play();
+                Destroy(explosionParticle, 4f);
                 AudioSource.PlayClipAtPoint(soundExplosion,transform.position);
                 playerCoins.AddCoinsPlayer(bonusCoin);
                 winStage.CountEnemyDestroyed();
@@ -44,6 +51,7 @@ public class EnemyCollider : MonoBehaviour
             }
             else
             {
+                damangeParticle.Play();
                 audioSources.Play();
             }
 
