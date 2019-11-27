@@ -576,7 +576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &215339502
 Transform:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 6
   loading: {fileID: 1384917872}
 --- !u!135 &259557828
 SphereCollider:
@@ -962,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &292507473
 Transform:
   m_ObjectHideFlags: 0
@@ -1164,7 +1164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &460454657
 Transform:
   m_ObjectHideFlags: 0
@@ -2121,7 +2121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &832714129
 Transform:
   m_ObjectHideFlags: 0
@@ -2503,7 +2503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &997989498
 Transform:
   m_ObjectHideFlags: 0
@@ -3011,7 +3011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 5
   loading: {fileID: 1384917872}
 --- !u!135 &1116746499
 SphereCollider:
@@ -3316,7 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 3
   loading: {fileID: 1384917872}
 --- !u!135 &1191426213
 SphereCollider:
@@ -5032,7 +5032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 4
   loading: {fileID: 1384917872}
 --- !u!135 &1804697703
 SphereCollider:

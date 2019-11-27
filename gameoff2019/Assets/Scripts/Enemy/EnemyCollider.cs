@@ -47,7 +47,10 @@ public class EnemyCollider : MonoBehaviour
                 playerCoins.AddCoinsPlayer(bonusCoin);
                 winStage.CountEnemyDestroyed();
                 CleanEnemyInTowers();
-                TowerAttackZone.towerPoints.Change(10);
+                if (TowerAttackZone != null)
+                {
+                    TowerAttackZone.towerPoints.Change(10);
+                }
                 gameObject.SetActive(false);
             }
             else

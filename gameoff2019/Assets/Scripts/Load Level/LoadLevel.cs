@@ -26,35 +26,35 @@ public class LoadLevel : MonoBehaviour
             case 3:
                 LoadStage("Stage2", stageIndexScene);
                 break;
-            case 5:
+            case 4:
                 LoadStage("Stage3", stageIndexScene);
                 break;
-            case 6:
+            case 5:
                 LoadStage("Stage4", stageIndexScene);
                 PlayerPrefs.SetInt("MiddleTowerA", 1);
                 break;
-            case 7:
+            case 6:
                 LoadStage("Stage5", stageIndexScene);
                 PlayerPrefs.SetInt("MiddleTowerB", 1);
                 break;
-            case 8:
+            case 7:
                 LoadStage("Stage6", stageIndexScene);
                 PlayerPrefs.SetInt("MiddleTowerC", 1);
                 PlayerPrefs.SetInt("MiddleTowerD", 1);
                 break;
-            case 9:
+            case 8:
                 LoadStage("Stage7", stageIndexScene);
                 PlayerPrefs.SetInt("StrongTowerA", 1);
                 break;
-            case 10:
+            case 9:
                 LoadStage("Stage8", stageIndexScene);
                 break;
-            case 11:
+            case 10:
                 LoadStage("Stage9", stageIndexScene);
                 PlayerPrefs.SetInt("StrongTowerB", 1);
                 PlayerPrefs.SetInt("StrongTowerC", 1);
                 break;
-            case 12:
+            case 11:
                 LoadStage("Stage10", stageIndexScene);
                 break;
         }
