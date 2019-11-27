@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class PresetWorld : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PresetWorld : MonoBehaviour
     TextMeshProUGUI textCoins;
     [SerializeField]
     GameObject[] stages;
+    [SerializeField]
+    GameObject canvasCongratulations;
     int[] qualifiedStage;
     int coins;
     // Start is called before the first frame update
@@ -33,8 +36,26 @@ public class PresetWorld : MonoBehaviour
             bool isActive = qualifiedStage[i] != 0;
             stages[i].SetActive(isActive);
         }
-
         coins = PlayerPrefs.GetInt("Coins");
         textCoins.text = coins.ToString();
+        VerifyEndGame();
+    }
+
+    private void VerifyEndGame()
+    {
+        bool endGame = true;
+        foreach(int i in qualifiedStage)
+        {
+            if (i.Equals(1))
+            {
+                endGame = false;
+                break;
+            }
+        }
+
+        if (endGame)
+        {
+            canvasCongratulations.SetActive(true);
+        }
     }
 }
