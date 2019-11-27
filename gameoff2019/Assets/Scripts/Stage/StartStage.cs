@@ -5,18 +5,26 @@ using UnityEngine;
 public class StartStage : MonoBehaviour
 {
     [SerializeField]
-    GameObject spawnEnimies;
+    GameObject[] spawnEnimies;
     // Start is called before the first frame update
     void Start()
     {
+        spawnEnimies = GameObject.FindGameObjectsWithTag("EnemySpawn");
         BarEnemies barEnemies = FindObjectOfType<BarEnemies>();
-        barEnemies.SetEnemySpawn(spawnEnimies);
-        spawnEnimies.SetActive(false);
+        barEnemies.SetEnemySpawn(spawnEnimies[0]);
+        foreach(GameObject go in spawnEnimies)
+        {
+            go.SetActive(false);
+        }
+        
     }
 
     public void StartSpawnEnemies(GameObject btnStartStage)
     {
         btnStartStage.SetActive(false);
-        spawnEnimies.SetActive(true);
+        foreach (GameObject go in spawnEnimies)
+        {
+            go.SetActive(true);
+        }
     }
 }
