@@ -9,14 +9,17 @@ public class StartStage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int totalEnemies = 0;
         spawnEnimies = GameObject.FindGameObjectsWithTag("EnemySpawn");
         BarEnemies barEnemies = FindObjectOfType<BarEnemies>();
         barEnemies.SetEnemySpawn(spawnEnimies[0]);
         foreach(GameObject go in spawnEnimies)
         {
+            totalEnemies += go.GetComponent<EnemySpawn>().enemyPool.GetInstances();
             go.SetActive(false);
         }
-        
+
+        FindObjectOfType<WinStage>().totalEnemies = totalEnemies;
     }
 
     public void StartSpawnEnemies(GameObject btnStartStage)

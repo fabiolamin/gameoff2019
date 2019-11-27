@@ -8,8 +8,7 @@ public class WinStage : MonoBehaviour
     [SerializeField]
     private GameObject canvasWin;
 
-    private int totalEnemies;
-    private int totalEnemiesDestoyed;
+    public int totalEnemies { get; set; }
     private ControlChips controlChips;
     private Player player;
     
@@ -18,14 +17,6 @@ public class WinStage : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         controlChips = FindObjectOfType<ControlChips>();
-        totalEnemiesDestoyed = 0;
-        totalEnemies = 0;
-        EnemySpawn[] enemySpawns = FindObjectsOfType<EnemySpawn>();
-        foreach(EnemySpawn eS in enemySpawns)
-        {
-            totalEnemies += eS.enemyPool.GetInstances();
-        }
-        Debug.Log("Total Enemys: " + totalEnemies);
     }
 
     public void CountEnemyDestroyed()
