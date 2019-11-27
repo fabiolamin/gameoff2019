@@ -54,10 +54,14 @@ public class Shoot : MonoBehaviour
             if (shootInterval <= 0)
             {
                 PlaySoundShot();
-                //particle.Play();
+                particle.Play();
                 isReadyToShoot = true;
                 shootInterval = timerAux;
             }
+        }
+        else
+        {
+            particle.Stop();
         }
     }
 

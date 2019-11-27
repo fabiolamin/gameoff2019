@@ -1344,6 +1344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3082583602228535511, guid: 46007660d8e209644a252525108a8c14,
+        type: 3}
+      propertyPath: spawnEnimies
+      value: 
+      objectReference: {fileID: 1164459738}
     - target: {fileID: 3082583602788203947, guid: 46007660d8e209644a252525108a8c14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1404,11 +1409,6 @@ PrefabInstance:
       propertyPath: txtCoins
       value: 
       objectReference: {fileID: 590649061}
-    - target: {fileID: 3082583602228535511, guid: 46007660d8e209644a252525108a8c14,
-        type: 3}
-      propertyPath: spawnEnimies
-      value: 
-      objectReference: {fileID: 1164459738}
     - target: {fileID: 3082583601433302895, guid: 46007660d8e209644a252525108a8c14,
         type: 3}
       propertyPath: canvasWin
@@ -1603,11 +1603,31 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708655850210571481, guid: 256b5a85c7a19ad41b60600407e5f6c1,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708655849713503584, guid: 256b5a85c7a19ad41b60600407e5f6c1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 184398298}
+    - target: {fileID: 6708655849607244022, guid: 256b5a85c7a19ad41b60600407e5f6c1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708655849636853757, guid: 256b5a85c7a19ad41b60600407e5f6c1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708655849563660003, guid: 256b5a85c7a19ad41b60600407e5f6c1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 256b5a85c7a19ad41b60600407e5f6c1, type: 3}
 --- !u!1001 &6912542073916950563
