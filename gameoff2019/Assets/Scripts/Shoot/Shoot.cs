@@ -32,7 +32,7 @@ public class Shoot : MonoBehaviour
         set { shootInterval = value; }
     }
 
-    private void Awake()
+    private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = PlayerPrefs.GetFloat("VolumeEffects")/2;

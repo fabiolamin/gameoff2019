@@ -122,8 +122,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 406117265269820885}
-  - component: {fileID: 1072445166011050532}
   - component: {fileID: 4285523891686419509}
+  - component: {fileID: 1072445166011050532}
   - component: {fileID: 5566106438941777314}
   m_Layer: 0
   m_Name: bolt
@@ -146,23 +146,6 @@ Transform:
   m_Father: {fileID: 8577253428799615504}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1072445166011050532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7010271582646136641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff8db6f43d594b4f840527082381996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackZone: {fileID: 4682853402711653169}
-  speed: 100
-  shootInterval: 0.5
-  forceShoot: 1
-  particle: {fileID: 999249791363279843}
 --- !u!114 &4285523891686419509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +164,23 @@ MonoBehaviour:
   allObjects: {fileID: 369005829447310926, guid: c700ae2ea250d95448d7046bfaa00eaf,
     type: 3}
   namePool: Bullets Basic Tower A
+--- !u!114 &1072445166011050532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010271582646136641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff8db6f43d594b4f840527082381996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackZone: {fileID: 4682853402711653169}
+  speed: 100
+  shootInterval: 0.5
+  forceShoot: 1
+  particle: {fileID: 999249791363279843}
 --- !u!82 &5566106438941777314
 AudioSource:
   m_ObjectHideFlags: 0
