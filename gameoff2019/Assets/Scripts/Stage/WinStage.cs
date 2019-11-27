@@ -25,13 +25,14 @@ public class WinStage : MonoBehaviour
         {
             totalEnemies += eS.enemyPool.GetInstances();
         }
+        Debug.Log("Total Enemys: " + totalEnemies);
     }
 
     public void CountEnemyDestroyed()
     {
-        totalEnemiesDestoyed++;
-
-        if (totalEnemiesDestoyed >= totalEnemies && !controlChips.gameOver)
+        totalEnemies--;
+        Debug.Log("Restantes Enemys: " + totalEnemies); //to do
+        if (totalEnemies<=0 && !controlChips.gameOver)
         {
             SaveStage();
             canvasWin.SetActive(true);
