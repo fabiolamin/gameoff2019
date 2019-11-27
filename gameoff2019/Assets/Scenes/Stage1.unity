@@ -1623,6 +1623,11 @@ PrefabInstance:
       propertyPath: canvasWin
       value: 
       objectReference: {fileID: 761535844}
+    - target: {fileID: 3082583601600747835, guid: 46007660d8e209644a252525108a8c14,
+        type: 3}
+      propertyPath: bonusStage
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46007660d8e209644a252525108a8c14, type: 3}
 --- !u!1001 &4119912303392882540

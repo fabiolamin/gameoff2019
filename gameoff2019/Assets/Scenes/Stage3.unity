@@ -1840,7 +1840,7 @@ PrefabInstance:
     - target: {fileID: 3082583601600747835, guid: 46007660d8e209644a252525108a8c14,
         type: 3}
       propertyPath: bonusStage
-      value: 500
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46007660d8e209644a252525108a8c14, type: 3}
