@@ -23,6 +23,7 @@ public class EnemyCollider : MonoBehaviour
     private void Awake()
     {
         audioSources = GetComponent<AudioSource>();
+        audioSources.volume = PlayerPrefs.GetFloat("VolumeEffects");
         enemyHealth = GetComponent<Health>();
         enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
         playerCoins = FindObjectOfType<PlayerCoins>();
@@ -42,7 +43,7 @@ public class EnemyCollider : MonoBehaviour
                 explosionParticle.transform.SetParent(GameObject.FindGameObjectWithTag("Garbage").transform);
                 explosionParticle.Play();
                 Destroy(explosionParticle, 4f);
-                AudioSource.PlayClipAtPoint(soundExplosion,transform.position);
+                AudioSource.PlayClipAtPoint(soundExplosion,Camera.main.transform.position, PlayerPrefs.GetFloat("VolumeEffects"));
                 playerCoins.AddCoinsPlayer(bonusCoin);
                 winStage.CountEnemyDestroyed();
                 CleanEnemyInTowers();
