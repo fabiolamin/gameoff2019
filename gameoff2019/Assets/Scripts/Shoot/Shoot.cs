@@ -11,8 +11,7 @@ public class Shoot : MonoBehaviour
     private Pool bulletPool;
     [SerializeField]
     private AttackZone attackZone;
-    [SerializeField]
-    private float speed = 125f;
+    private float speed = 50f;
     [SerializeField]
     private float shootInterval = 0.5f;
     [SerializeField]
