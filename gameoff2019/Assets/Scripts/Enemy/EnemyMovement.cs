@@ -18,7 +18,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Finish").transform;
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Finish");
+        int random = Random.Range(0, targets.Length);
+        target = targets[random].transform;
     }
 
     private void Awake()
