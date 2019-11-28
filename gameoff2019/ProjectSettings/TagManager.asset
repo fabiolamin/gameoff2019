@@ -13,6 +13,7 @@ TagManager:
   - EnemySpawn
   - Trash
   - Garbage
+  - CanvasDialogTower
   layers:
   - Default
   - TransparentFX
