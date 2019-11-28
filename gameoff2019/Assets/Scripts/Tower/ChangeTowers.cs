@@ -8,21 +8,30 @@ public class ChangeTowers : MonoBehaviour
     private GameObject[] towers;
     [SerializeField]
     private int[] price;
+    private bool isTowerActived = false;
 
     public void ActiveTower(int value)
     {
-        Player player = FindObjectOfType<Player>();
-        int wallet = player.Coins;
-        if (wallet >= price[value])
+        if (!isTowerActived)
         {
-            wallet -= price[value];
-            player.Coins = wallet;
-            FindObjectOfType<ChangeCoins>().UpdateCoins();
-            towers[value].SetActive(true);
+            Player player = FindObjectOfType<Player>();
+            int wallet = player.Coins;
+            if (wallet >= price[value])
+            {
+                wallet -= price[value];
+                player.Coins = wallet;
+                FindObjectOfType<ChangeCoins>().UpdateCoins();
+                isTowerActived = true;
+                towers[value].SetActive(true);
+            }
+            else
+            {
+                Debug.Log("Insufficient Coins");
+            }
         }
         else
         {
-            Debug.Log("Insufficient Coins");
+            Debug.Log("Tower is already activated");
         }
         
         
