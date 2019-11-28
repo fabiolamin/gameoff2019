@@ -720,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &215339502
 Transform:
   m_ObjectHideFlags: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 11
   loading: {fileID: 1384917872}
 --- !u!135 &215339504
 SphereCollider:
@@ -1106,7 +1106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &292507473
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 7
   loading: {fileID: 1384917872}
 --- !u!135 &292507475
 SphereCollider:
@@ -1308,7 +1308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &460454657
 Transform:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 9
   loading: {fileID: 1384917872}
 --- !u!135 &460454659
 SphereCollider:
@@ -1488,7 +1488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &521247054
 Transform:
   m_ObjectHideFlags: 0
@@ -2550,7 +2550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &832714129
 Transform:
   m_ObjectHideFlags: 0
@@ -2579,7 +2579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 8
   loading: {fileID: 1384917872}
 --- !u!135 &832714131
 SphereCollider:
@@ -2932,7 +2932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &997989498
 Transform:
   m_ObjectHideFlags: 0
@@ -2961,7 +2961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210bfd46efabed4c99b7c7512bbb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndexScene: 2
+  stageIndexScene: 10
   loading: {fileID: 1384917872}
 --- !u!135 &997989500
 SphereCollider:
