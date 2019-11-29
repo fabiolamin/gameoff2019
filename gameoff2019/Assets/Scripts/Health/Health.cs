@@ -5,13 +5,13 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    private int value = 100;
-    public int Value
+    private float value = 100;
+    public float Value
     {
         get { return value; }
     }
 
-    public void Change(int amount)
+    public void Change(float amount)
     {
         value += amount;
     }

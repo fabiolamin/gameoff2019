@@ -186,6 +186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Tower D
       objectReference: {fileID: 0}
+    - target: {fileID: 3813357622288927338, guid: 68c2be19493bb9548829f0256c07a245,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 193827773475305593, guid: 68c2be19493bb9548829f0256c07a245,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -348,6 +353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Strong Tower C
       objectReference: {fileID: 0}
+    - target: {fileID: 3724554680589145080, guid: 054dd605a91e7a84394fe4c71293a684,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 426469118915256811, guid: 054dd605a91e7a84394fe4c71293a684,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -428,6 +438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Strong Tower A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038650226183210713, guid: 590b66392c0868c4aad9de2bbd4f3849,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1033421234876282058, guid: 590b66392c0868c4aad9de2bbd4f3849,
         type: 3}
@@ -510,6 +525,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tower A
       objectReference: {fileID: 0}
+    - target: {fileID: 4707351589341151235, guid: 99136b7fee00626419a4c34ea4b913b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8577253428799615504, guid: 99136b7fee00626419a4c34ea4b913b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -590,6 +610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Middle Tower B
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846568962569519879, guid: 16a2b941bb73f6c44bcc8a7397701531,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 232669646378578196, guid: 16a2b941bb73f6c44bcc8a7397701531,
         type: 3}
@@ -672,6 +697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Tower C
       objectReference: {fileID: 0}
+    - target: {fileID: 1319528028451088091, guid: 7affa6b338ed7204980b32f19619b4c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2599911898433017032, guid: 7affa6b338ed7204980b32f19619b4c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -752,6 +782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Tower B
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492609638841462336, guid: e06a4f797b076a541841c8a5c17ef5c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5881772702737816659, guid: e06a4f797b076a541841c8a5c17ef5c5,
         type: 3}
@@ -834,6 +869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Tower A
       objectReference: {fileID: 0}
+    - target: {fileID: 4899065487153468991, guid: 05b45f826373ff74bb8b26e27bb48089,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8477924878287004716, guid: 05b45f826373ff74bb8b26e27bb48089,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -914,6 +954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Tower C
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248468446231791070, guid: 5beaed54d3e375c498af1d6b5bb525bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118971098848360397, guid: 5beaed54d3e375c498af1d6b5bb525bf,
         type: 3}

@@ -5,6 +5,12 @@ using UnityEngine;
 public class Points : MonoBehaviour
 {
     public int Value { get; private set; }
+    private TowerLevelUp towerLevelUp;
+
+    private void Start()
+    {
+        towerLevelUp = GetComponent<TowerLevelUp>();
+    }
 
     private void Awake()
     {
@@ -13,5 +19,7 @@ public class Points : MonoBehaviour
     public void Change(int amount)
     {
         Value += amount;
+        towerLevelUp.CheckLevelUp(Value);
+
     }
 }

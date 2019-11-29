@@ -19,6 +19,7 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private ParticleSystem particle;
     private AudioSource audioSource;
+    private TowerLevelUp towerLevelUp;
     public float Speed
     {
         get { return speed; }
@@ -33,13 +34,14 @@ public class Shoot : MonoBehaviour
 
     private void Start()
     {
+        towerLevelUp = GetComponentInParent<TowerLevelUp>();
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = PlayerPrefs.GetFloat("VolumeEffects")/2;
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
         foreach(GameObject go in bulletPool.InstantiatePrefabs)
         {
-            go.GetComponent<AttackDamage>().Value = forceShoot;
+            go.GetComponent<AttackDamage>().Value = forceShoot * towerLevelUp.GetFactor();
         }
         position = 0;
         isReadyToShoot = false;
@@ -86,6 +88,7 @@ public class Shoot : MonoBehaviour
         if(position <= bulletPool.InstantiatePrefabs.Length - 1)
         {
             bullet = bulletPool.GetPrefab(position);
+            bullet.GetComponent<AttackDamage>().Value = forceShoot * towerLevelUp.GetFactor();
             bullet.GetComponent<Rigidbody>().velocity = transform.forward * speed;
             position++;
         }
