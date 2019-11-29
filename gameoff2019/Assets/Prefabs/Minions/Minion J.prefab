@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b107ad5842201e46b64b78deefb24ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 300
+  value: 390
 --- !u!195 &1480801323529094420
 NavMeshAgent:
   m_ObjectHideFlags: 0
