@@ -51,9 +51,9 @@ GameObject:
   - component: {fileID: 7790957069350210447}
   - component: {fileID: 1244133219142414777}
   - component: {fileID: 4789725510231182656}
-  - component: {fileID: 3181722219981761061}
   - component: {fileID: 2983000212616984704}
   - component: {fileID: 9195059314290927090}
+  - component: {fileID: 3933737719444503788}
   m_Layer: 12
   m_Name: Base Tower
   m_TagString: BaseTower
@@ -125,19 +125,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3181722219981761061
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504416077008009628}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.020000007, z: 0.004000001}
-  m_Center: {x: 0, y: -1.1368683e-16, z: -0.008000002}
 --- !u!114 &2983000212616984704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +161,19 @@ MonoBehaviour:
   - {fileID: 4669487969621100598}
   - {fileID: 4285253060133755826}
   price: c8000000fa0000005e010000f40100005802000020030000b6030000dc050000b80b000070170000
+--- !u!65 &3933737719444503788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504416077008009628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.020000007, z: 0.004000001}
+  m_Center: {x: 0, y: -1.1368683e-16, z: -0.008000002}
 --- !u!1001 &6685268420723341
 PrefabInstance:
   m_ObjectHideFlags: 0

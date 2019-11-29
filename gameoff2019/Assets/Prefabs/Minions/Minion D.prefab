@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 7127899555967472471}
   - component: {fileID: 3591598209158410158}
   - component: {fileID: 6542270725926781548}
-  - component: {fileID: 6542270725926781539}
   - component: {fileID: 6542270725926781538}
   - component: {fileID: 6542270725926781537}
   - component: {fileID: 6542270725926781536}
   - component: {fileID: 6542270725926781543}
   - component: {fileID: 6542270725926781542}
-  m_Layer: 0
+  - component: {fileID: 8511996846356394964}
+  m_Layer: 14
   m_Name: Minion D
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,19 +105,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &6542270725926781539
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3020575622918495090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.059999984, y: 0.06353542, z: 0.080808766}
-  m_Center: {x: -0.00007162522, y: -0.00076846307, z: 0.020659098}
 --- !u!114 &6542270725926781538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +158,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 3020575622918495090}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.013
+  m_Radius: 0.012
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -280,6 +267,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &8511996846356394964
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3020575622918495090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.035
+  m_Center: {x: -0.00007162522, y: -0.00076846307, z: 0.020659098}
 --- !u!1001 &6542270726933959899
 PrefabInstance:
   m_ObjectHideFlags: 0

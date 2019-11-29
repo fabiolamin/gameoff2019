@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4683418721956756215}
   - component: {fileID: 4683418721956756212}
   - component: {fileID: 4683418721956756213}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Minion C
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 3737765133677110265}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.013
+  m_Radius: 0.006
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -167,8 +167,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.02
-  m_BaseOffset: 0.01
+  m_Height: 0.04
+  m_BaseOffset: 0.018
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!82 &4683418721956756212
@@ -278,7 +278,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.018787505
+  m_Radius: 0.016
   m_Center: {x: 0.000041395426, y: -0.000047232956, z: 0.00001528114}
 --- !u!1001 &4683418721880684210
 PrefabInstance:

@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3421717864655034359}
   - component: {fileID: 8953414648868432654}
   - component: {fileID: 1683730762882975458}
-  - component: {fileID: 1683730762882975459}
   - component: {fileID: 1683730762882975460}
   - component: {fileID: 1683730762882975461}
   - component: {fileID: 1683730762882975462}
   - component: {fileID: 1683730762882975463}
   - component: {fileID: 1683730762882975448}
-  m_Layer: 0
+  - component: {fileID: 3860661541538471867}
+  m_Layer: 14
   m_Name: Minion E
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,19 +105,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &1683730762882975459
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7240729522193489874}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.09987142, y: 0.06051717, z: 0.08080876}
-  m_Center: {x: -0.00007347948, y: 0.00026395728, z: 0.020333799}
 --- !u!114 &1683730762882975460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +267,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &3860661541538471867
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240729522193489874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04993571
+  m_Center: {x: -0.00007347948, y: 0.00026395728, z: 0.020333799}
 --- !u!1001 &1683730763096593691
 PrefabInstance:
   m_ObjectHideFlags: 0

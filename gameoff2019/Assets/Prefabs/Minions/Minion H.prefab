@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6381099743635875078}
   - component: {fileID: 6381099743635875079}
   - component: {fileID: 6381099743635875080}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Minion H
   m_TagString: Enemy
   m_Icon: {fileID: 0}
