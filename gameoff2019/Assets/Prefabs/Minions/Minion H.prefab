@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62206a818b0e7524fb2b3b68c60fdff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusCoin: 80
+  bonusCoin: 40
   playerCoins: {fileID: 0}
   soundExplosion: {fileID: 8300000, guid: 89b73877c914f7d4da658c7df29003f0, type: 3}
   damangeParticle: {fileID: 6499072076253710804}
