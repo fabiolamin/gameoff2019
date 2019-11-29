@@ -649,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 5208390869711618240, guid: f8881ef831e1a414db227baf8c58a7ec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.418108
+      value: 45.83
       objectReference: {fileID: 0}
     - target: {fileID: 5208390869711618240, guid: f8881ef831e1a414db227baf8c58a7ec,
         type: 3}
@@ -691,12 +691,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5208390869711618243, guid: f8881ef831e1a414db227baf8c58a7ec,
+        type: 3}
+      propertyPath: spawnInterval
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5208390869711618242, guid: f8881ef831e1a414db227baf8c58a7ec,
         type: 3}
       propertyPath: prefabToInstantiate.Array.data[0]
       value: 
-      objectReference: {fileID: 7470682208608328721, guid: 80a0dab6a67850548aa7fe715c4635cf,
+      objectReference: {fileID: 4318050590695053249, guid: 9b437bb2511c7674f9a6c1e8bd47e646,
         type: 3}
+    - target: {fileID: 5208390869711618242, guid: f8881ef831e1a414db227baf8c58a7ec,
+        type: 3}
+      propertyPath: amountToInstantiate
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8881ef831e1a414db227baf8c58a7ec, type: 3}
 --- !u!1001 &1243845082
@@ -1557,7 +1567,7 @@ PrefabInstance:
     - target: {fileID: 3082583601600747835, guid: 46007660d8e209644a252525108a8c14,
         type: 3}
       propertyPath: bonusStage
-      value: 1000
+      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46007660d8e209644a252525108a8c14, type: 3}

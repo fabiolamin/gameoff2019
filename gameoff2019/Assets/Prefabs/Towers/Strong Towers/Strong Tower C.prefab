@@ -158,9 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackZone: {fileID: 2681027233708631501}
-  speed: 100
   shootInterval: 0.5
-  forceShoot: 40
+  forceShoot: 90
   particle: {fileID: 1514264205587905122}
 --- !u!114 &6700281126097558030
 MonoBehaviour:

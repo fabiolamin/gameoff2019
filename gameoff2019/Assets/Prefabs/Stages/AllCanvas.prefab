@@ -937,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1500
+  m_text: 1400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -2255,7 +2255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3000
+  m_text: 2700
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -2582,9 +2582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '500
-
-'
+  m_text: 240
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -2654,9 +2652,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6708655850482357314}
-    characterCount: 4
+    characterCount: 3
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -2841,7 +2839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 600
+  m_text: 420
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -3067,7 +3065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 350
+  m_text: 180
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -3781,7 +3779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 60
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -3851,7 +3849,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6708655850828746623}
-    characterCount: 3
+    characterCount: 2
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -4144,7 +4142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 950
+  m_text: 780
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -4300,7 +4298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 6000
+  m_text: 5400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -4456,7 +4454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 800
+  m_text: 600
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,
@@ -5178,8 +5176,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6708655850210571480}
   m_HandleRect: {fileID: 6708655850210571481}
   m_Direction: 0
-  m_Value: 0.00000011939586
-  m_Size: 0.63568985
+  m_Value: 0.00000011939584
+  m_Size: 0.6356898
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5862,7 +5860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 250
+  m_text: 120
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0189887c753da284f95a2be2e2d0e00c, type: 2}
   m_sharedMaterial: {fileID: 8655119066802913362, guid: 0189887c753da284f95a2be2e2d0e00c,

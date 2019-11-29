@@ -178,9 +178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackZone: {fileID: 894925638493772091}
-  speed: 100
   shootInterval: 0.5
-  forceShoot: 5
+  forceShoot: 16
   particle: {fileID: 2200237014773350541}
 --- !u!82 &8886893255070334069
 AudioSource:

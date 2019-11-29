@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62206a818b0e7524fb2b3b68c60fdff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusCoin: 20
+  bonusCoin: 75
   playerCoins: {fileID: 0}
   soundExplosion: {fileID: 8300000, guid: 89b73877c914f7d4da658c7df29003f0, type: 3}
   damangeParticle: {fileID: 7341025285493324604}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0e9301f87899c4b94c01ac01301482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   target: {fileID: 0}
 --- !u!114 &7448919063677181019
 MonoBehaviour:
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b107ad5842201e46b64b78deefb24ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 10
+  value: 55
 --- !u!195 &7448919063677181012
 NavMeshAgent:
   m_ObjectHideFlags: 0
