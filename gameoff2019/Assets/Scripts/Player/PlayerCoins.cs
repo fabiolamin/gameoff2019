@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerCoins : MonoBehaviour
 {
-    Player player;
+    private Player player;
+    private Coins coins;
     private void Awake()
     {
         player = GetComponent<Player>();
@@ -12,8 +13,7 @@ public class PlayerCoins : MonoBehaviour
     public void AddCoinsPlayer(int bonusCoin)
     {
         player.Coins += bonusCoin;
-
-        ChangeCoins changeCoins = FindObjectOfType<ChangeCoins>();
-        changeCoins.UpdateCoins();
+        coins = FindObjectOfType<Coins>();
+        coins.UpdateCoins();
     }
 }
