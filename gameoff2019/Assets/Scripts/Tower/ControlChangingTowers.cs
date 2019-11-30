@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ControlChangingTowers : MonoBehaviour
 {
-    private ChangeTowers changeTowersBaseSelected;
+    private TowerChange changeTowersBaseSelected;
 
-    public void SetChangeTowers(ChangeTowers gt)
+    public void SetChangeTowers(TowerChange towerChange)
     {
-        changeTowersBaseSelected = gt;
+        changeTowersBaseSelected = towerChange;
     }
 
     public void ActiveTower(int value)
