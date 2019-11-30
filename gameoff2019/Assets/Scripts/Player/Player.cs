@@ -10,21 +10,19 @@ public class Player : MonoBehaviour
     private int life;
     [SerializeField]
     private int bonusStage;
-
-    private void Start()
-    {
-        Coins = PlayerPrefs.GetInt("Coins")+ bonusStage;
-    }
-
     public int Coins
     {
         get { return coins; }
         set { coins = value; }
     }
-
     public int Life
     {
         get { return life; }
         set { life = value; }
+    }
+
+    private void Start()
+    {
+        Coins = PlayerPrefs.GetInt("Coins")+ bonusStage;
     }
 }
