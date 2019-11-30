@@ -7,19 +7,19 @@ public class EnemyCollider : MonoBehaviour
     private Health enemyHealth;
     private AttackDamage bulletAttackDamage;
     private Pool enemyPool;
+    private AudioSource audioSources;
     [SerializeField]
     private int bonusCoin;
     public AttackZone TowerAttackZone { get; set; }
     public PlayerCoins playerCoins;
-    private WinStage winStage;
+    private StageWin stageWin;
     [SerializeField]
     private AudioClip soundExplosion;
     [SerializeField]
     private ParticleSystem damangeParticle;
     [SerializeField]
     private ParticleSystem explosionParticle;
-    private AudioSource audioSources;
-
+    
     private void Awake()
     {
         audioSources = GetComponent<AudioSource>();
@@ -27,7 +27,7 @@ public class EnemyCollider : MonoBehaviour
         enemyHealth = GetComponent<Health>();
         enemyPool = GameObject.FindGameObjectWithTag("EnemySpawn").GetComponent<Pool>();
         playerCoins = FindObjectOfType<PlayerCoins>();
-        winStage = FindObjectOfType<WinStage>();
+        stageWin = FindObjectOfType<StageWin>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -45,7 +45,7 @@ public class EnemyCollider : MonoBehaviour
                 Destroy(explosionParticle, 4f);
                 AudioSource.PlayClipAtPoint(soundExplosion,Camera.main.transform.position, PlayerPrefs.GetFloat("VolumeEffects"));
                 playerCoins.AddCoinsPlayer(bonusCoin);
-                winStage.CountEnemyDestroyed();
+                stageWin.CountEnemyDestroyed();
                 CleanEnemyInTowers();
                 if (TowerAttackZone != null)
                 {
@@ -63,14 +63,12 @@ public class EnemyCollider : MonoBehaviour
         }
     }
 
-    
-
-    private void CleanEnemyInTowers() // clean all towers that have the enemy 
+    private void CleanEnemyInTowers()
     {
         AttackZone[] attackZones = FindObjectsOfType<AttackZone>();
-        foreach (AttackZone at in attackZones)
+        foreach (AttackZone attackZone in attackZones)
         {
-            at.RemoveFromAttackZone(gameObject);
+            attackZone.RemoveFromAttackZone(gameObject);
         }
     }
 }
