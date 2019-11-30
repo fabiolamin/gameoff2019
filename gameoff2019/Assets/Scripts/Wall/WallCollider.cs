@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WallCollider : MonoBehaviour
 {
-    ControlChips controlChips;
+    private ControlChips controlChips;
     private void Start()
     {
         controlChips = FindObjectOfType<ControlChips>();
@@ -13,8 +13,8 @@ public class WallCollider : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            controlChips.Damage();
             GameObject enemy = other.gameObject;
+            controlChips.ReceiveDamage();
             enemy.SetActive(false);
         }
     }
