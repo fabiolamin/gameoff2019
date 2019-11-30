@@ -39,9 +39,9 @@ public class Shoot : MonoBehaviour
         audioSource.volume = PlayerPrefs.GetFloat("VolumeEffects")/2;
         timerAux = shootInterval;
         bulletPool = GetComponent<Pool>();
-        foreach(GameObject go in bulletPool.InstantiatePrefabs)
+        foreach(GameObject prefab in bulletPool.InstantiatePrefabs)
         {
-            go.GetComponent<AttackDamage>().Value = forceShoot * towerLevelUp.GetFactor();
+            prefab.GetComponent<AttackDamage>().Value = forceShoot * towerLevelUp.GetFactor();
         }
         position = 0;
         isReadyToShoot = false;
@@ -66,20 +66,20 @@ public class Shoot : MonoBehaviour
         }
     }
 
-    private void PlaySoundShot()
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.Play();
-        }
-    }
-
     private void FixedUpdate()
     {
         if (isReadyToShoot)
         {
             Initiate();
             isReadyToShoot = false;
+        }
+    }
+
+    private void PlaySoundShot()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
         }
     }
 
