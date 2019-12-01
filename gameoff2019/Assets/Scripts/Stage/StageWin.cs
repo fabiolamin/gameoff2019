@@ -7,13 +7,14 @@ public class StageWin : MonoBehaviour
 {
     private ControlChips controlChips;
     private Player player;
-    [SerializeField]
     private GameObject canvasWin;
 
     public int totalEnemies { get; set; }
     
     private void Start()
     {
+        canvasWin = GameObject.FindGameObjectWithTag("CanvasWin");
+        canvasWin.SetActive(false);
         player = FindObjectOfType<Player>();
         controlChips = FindObjectOfType<ControlChips>();
     }

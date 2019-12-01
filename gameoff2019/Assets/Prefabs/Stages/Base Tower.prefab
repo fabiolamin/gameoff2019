@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 1244133219142414777}
   - component: {fileID: 4789725510231182656}
   - component: {fileID: 2983000212616984704}
-  - component: {fileID: 9195059314290927090}
+  - component: {fileID: 273066406358974630}
   - component: {fileID: 3933737719444503788}
   m_Layer: 12
   m_Name: Base Tower
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee6fd744dfd9ee40937d849e8f7d5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9195059314290927090
+--- !u!114 &273066406358974630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6504416077008009628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bd92cd920f36ae428fdf4a89881a801, type: 3}
+  m_Script: {fileID: 11500000, guid: 917ae1d4015e5f0449ecb87a79dce589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   towers:

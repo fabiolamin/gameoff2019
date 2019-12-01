@@ -91,7 +91,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -663,7 +663,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1121,7 +1121,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2081,7 +2081,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2182,7 +2182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2509,7 +2509,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2766,7 +2766,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3249,7 +3249,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3706,7 +3706,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4069,7 +4069,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6708655850539722026}
-        m_MethodName: ClickTower
+        m_MethodName: Select
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5176,8 +5176,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6708655850210571480}
   m_HandleRect: {fileID: 6708655850210571481}
   m_Direction: 0
-  m_Value: 0.00000011939584
-  m_Size: 0.6356898
+  m_Value: 0
+  m_Size: 0.63568985
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6157,11 +6157,11 @@ GameObject:
   - component: {fileID: 6708655851616434034}
   m_Layer: 5
   m_Name: CanvasWin
-  m_TagString: Untagged
+  m_TagString: CanvasWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6708655851616434047
 RectTransform:
   m_ObjectHideFlags: 0

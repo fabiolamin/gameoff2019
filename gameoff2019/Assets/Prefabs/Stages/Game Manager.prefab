@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082583601433302892}
-  - component: {fileID: 3082583601433302895}
+  - component: {fileID: 3011203822011389996}
   m_Layer: 0
   m_Name: WinStage
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 3082583602788203947}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3082583601433302895
+--- !u!114 &3011203822011389996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3082583601433302893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d7a2bc9773f384cbbda8f7d6314e8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 53ea26bb082d2324a9d22ac92183ccf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvasWin: {fileID: 0}
@@ -233,7 +233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d68649d0da3ea944aaadb6793b07bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnEnimies: {fileID: 0}
+  spawnEnimies:
+  - {fileID: 0}
 --- !u!1 &3082583602788203944
 GameObject:
   m_ObjectHideFlags: 0
