@@ -31,13 +31,11 @@ namespace UnityStandardAssets.Utility
             // wait for random duration
 
             float stopTime = Time.time + Random.Range(minDuration, maxDuration);
-            Debug.Log("Tempo Para Apagar o Fogo: " + stopTime);
 
             while (Time.time < stopTime && !m_EarlyStop)
             {
                 yield return null;
             }
-            Debug.Log("stopping " + name);
 
             // turn off emission
             foreach (var system in systems)
