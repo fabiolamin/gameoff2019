@@ -22,7 +22,6 @@ public class StageWin : MonoBehaviour
     public void CountEnemyDestroyed()
     {
         totalEnemies--;
-        Debug.Log("Restantes Enemys: " + totalEnemies);
         if (totalEnemies<=0 && !controlChips.gameOver)
         {
             SaveStage();
